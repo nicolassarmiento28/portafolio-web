@@ -185,6 +185,13 @@
   transform: translateY(0);
 }
 
+/* Google Forms iframe styling */
+.google-form-iframe {
+  border-radius: 12px;
+  min-height: 800px;
+  background: transparent;
+}
+
 @media (max-width: 992px) {
   .contact-content {
     grid-template-columns: 1fr;

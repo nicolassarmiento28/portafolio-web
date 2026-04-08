@@ -54,37 +54,29 @@ public/projects/project2/
 #### c) Tu CV
 Coloca tu CV en PDF en: `public/cv/CV-TuNombre.pdf`
 
-### 3. Configurar EmailJS (para formulario de contacto)
+### 3. Configurar Google Forms (para formulario de contacto)
 
-1. Ve a https://www.emailjs.com/ y crea una cuenta gratuita
+1. Ve a https://docs.google.com/forms/ y crea un nuevo formulario
 
-2. Crea un Email Service:
-   - Dashboard > Add New Service
-   - Selecciona tu proveedor (Gmail, Outlook, etc.)
-   - Conecta tu cuenta
+2. Configura tu formulario con estos campos:
+   - Nombre (respuesta corta)
+   - Email (respuesta corta)
+   - Mensaje (párrafo)
 
-3. Crea un Email Template:
-   - Dashboard > Email Templates > Create New Template
-   - Usa estas variables en tu template:
-     ```
-     De: {{from_name}}
-     Email: {{from_email}}
-     
-     Mensaje:
-     {{message}}
-     ```
+3. Personaliza el diseño del formulario (tema, colores, etc.)
 
-4. Copia tus credenciales:
-   - Service ID (en Email Services)
-   - Template ID (en Email Templates)
-   - Public Key (en Account > API Keys)
+4. Obtén la URL embebida:
+   - Click en el botón "Enviar" (esquina superior derecha)
+   - Selecciona la pestaña "<>" (Insertar HTML)
+   - Copia la URL del atributo `src` del iframe
+   - Ejemplo: `https://docs.google.com/forms/d/e/1FAIpQLSc.../viewform?embedded=true`
 
 5. Crea un archivo `.env` en la raíz del proyecto:
 ```env
-VITE_EMAILJS_SERVICE_ID=tu_service_id_aquí
-VITE_EMAILJS_TEMPLATE_ID=tu_template_id_aquí
-VITE_EMAILJS_PUBLIC_KEY=tu_public_key_aquí
+VITE_GOOGLE_FORM_URL=https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true
 ```
+
+**Nota**: Reemplaza `TU_FORM_ID` con tu ID real de Google Forms.
 
 ### 4. Ejecutar el Proyecto
 

@@ -1,0 +1,23 @@
+.about-contact-section {
+  padding: 0;
+  background: var(--bg-primary);
+}
+
+.about-contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Ajustar padding de las secciones internas */
+.about-contact-section .about-section,
+.about-contact-section .contact-section {
+  padding: 100px 24px;
+}
+
+@media (max-width: 992px) {
+  .about-contact-section .about-section,
+  .about-contact-section .contact-section {
+    padding: 60px 16px;
+  }
+}

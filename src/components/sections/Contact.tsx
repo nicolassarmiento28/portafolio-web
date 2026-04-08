@@ -1,59 +1,22 @@
-import { useState } from 'react';
-import { Form, Input, Button, message } from 'antd';
-import { MailOutlined, UserOutlined, SendOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+import { MailOutlined, UserOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import { fadeInUp, fadeInLeft, fadeInRight } from '../../utils/animations';
 import SocialLinks from '../common/SocialLinks';
 import personalData from '../../data/personal.json';
 import './Contact.css';
 
-const { TextArea } = Input;
-
-interface ContactFormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
 const Contact = () => {
-  const [form] = Form.useForm();
-  const [loading, setLoading] = useState(false);
-
-  const onFinish = async (values: ContactFormData) => {
-    setLoading(true);
-
-    try {
-      // Configuración de EmailJS (necesitas crear cuenta y configurar)
-      // Reemplaza estos valores con tus propias credenciales de EmailJS
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'tu_service_id';
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'tu_template_id';
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'tu_public_key';
-
-      await emailjs.send(
-        serviceId,
-        templateId,
-        {
-          from_name: values.name,
-          from_email: values.email,
-          message: values.message,
-          to_name: personalData.fullName,
-        },
-        publicKey
-      );
-
-      message.success('¡Mensaje enviado exitosamente! Te responderé pronto.');
-      form.resetFields();
-    } catch (error) {
-      console.error('Error al enviar el mensaje:', error);
-      message.error('Hubo un error al enviar el mensaje. Por favor intenta nuevamente o contáctame directamente por email.');
-    } finally {
-      setLoading(false);
-    }
-  };
+  // URL del formulario de Google Forms
+  // Reemplaza esta URL con tu propia URL de Google Forms embebido
+  // Para obtener tu URL:
+  // 1. Crea tu formulario en Google Forms
+  // 2. Click en "Enviar" -> Pestaña "<>" (Insertar HTML)
+  // 3. Copia el src del iframe
+  const googleFormUrl = import.meta.env.VITE_GOOGLE_FORM_URL || 'https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true';
 
   return (
-    <section id="contact" className="contact-section">
+    <div id="contact" className="contact-section">
       <div className="contact-container">
         <motion.div
           className="contact-header"
@@ -133,72 +96,23 @@ const Contact = () => {
             variants={fadeInRight}
           >
             <div className="form-card glass">
-              <Form
-                form={form}
-                layout="vertical"
-                onFinish={onFinish}
-                className="contact-form"
+              <iframe
+                src={googleFormUrl}
+                width="100%"
+                height="800"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                title="Formulario de Contacto"
+                className="google-form-iframe"
               >
-                <Form.Item
-                  name="name"
-                  rules={[{ required: true, message: 'Por favor ingresa tu nombre' }]}
-                >
-                  <Input
-                    prefix={<UserOutlined />}
-                    placeholder="Tu Nombre"
-                    size="large"
-                    className="form-input"
-                  />
-                </Form.Item>
-
-                <Form.Item
-                  name="email"
-                  rules={[
-                    { required: true, message: 'Por favor ingresa tu email' },
-                    { type: 'email', message: 'Por favor ingresa un email válido' },
-                  ]}
-                >
-                  <Input
-                    prefix={<MailOutlined />}
-                    placeholder="tu@email.com"
-                    size="large"
-                    className="form-input"
-                  />
-                </Form.Item>
-
-                <Form.Item
-                  name="message"
-                  rules={[
-                    { required: true, message: 'Por favor ingresa tu mensaje' },
-                    { min: 10, message: 'El mensaje debe tener al menos 10 caracteres' },
-                  ]}
-                >
-                  <TextArea
-                    placeholder="Cuéntame sobre tu proyecto..."
-                    rows={6}
-                    className="form-textarea"
-                  />
-                </Form.Item>
-
-                <Form.Item>
-                  <Button
-                    type="primary"
-                    htmlType="submit"
-                    size="large"
-                    icon={<SendOutlined />}
-                    loading={loading}
-                    className="submit-button"
-                    block
-                  >
-                    Enviar Mensaje
-                  </Button>
-                </Form.Item>
-              </Form>
+                Cargando…
+              </iframe>
             </div>
           </motion.div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

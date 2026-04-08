@@ -6,7 +6,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <section id="about" className="about-section">
+    <div id="about" className="about-section">
       <div className="about-container">
         <motion.div
           className="about-header"
@@ -111,7 +111,7 @@ const About = () => {
           </Col>
         </Row>
       </div>
-    </section>
+    </div>
   );
 };
 

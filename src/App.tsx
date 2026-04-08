@@ -4,8 +4,7 @@ import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
-import About from './components/sections/About';
-import Contact from './components/sections/Contact';
+import AboutContact from './components/sections/AboutContact';
 import Footer from './components/layout/Footer';
 import './styles/global.css';
 
@@ -43,8 +42,7 @@ const AppContent = () => {
           <Hero />
           <Projects />
           <Skills />
-          <About />
-          <Contact />
+          <AboutContact />
         </main>
         <Footer />
       </div>

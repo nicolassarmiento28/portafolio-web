@@ -11,7 +11,7 @@ Portafolio personal moderno con diseño Cyber Neon, construido con React, TypeSc
 - **Responsive Design**: Optimizado para todos los dispositivos
 - **Proyectos Dinámicos**: Grid de 4 proyectos con modals detallados
 - **Skills Categorizada**: Frontend, Backend y Aprendiendo
-- **Formulario de Contacto**: Integración con EmailJS
+- **Formulario de Contacto**: Integración con Google Forms
 - **Performance Optimizada**: Carga rápida y eficiente
 
 ## Stack Tecnológico
@@ -21,7 +21,7 @@ Portafolio personal moderno con diseño Cyber Neon, construido con React, TypeSc
 - **Vite** - Build tool
 - **Ant Design 5** - Componentes UI
 - **Framer Motion** - Animaciones
-- **EmailJS** - Servicio de email
+- **Google Forms** - Formulario de contacto
 - **React Icons** - Iconos
 
 ## Instalación
@@ -42,7 +42,7 @@ npm install
 cp .env.example .env
 ```
 
-4. Edita el archivo `.env` con tus credenciales de EmailJS (ver sección de configuración)
+4. Edita el archivo `.env` con tu URL de Google Forms (ver sección de configuración)
 
 ## Configuración
 
@@ -87,21 +87,17 @@ public/
 
 Edita `src/data/skills.json` para ajustar tus niveles de habilidad.
 
-### 4. Configurar EmailJS
+### 4. Configurar Google Forms
 
-1. Crea una cuenta en [EmailJS](https://www.emailjs.com/)
-2. Crea un Email Service (Gmail, Outlook, etc.)
-3. Crea un Email Template con las siguientes variables:
-   - `{{from_name}}` - Nombre del remitente
-   - `{{from_email}}` - Email del remitente
-   - `{{message}}` - Mensaje
-   - `{{to_name}}` - Tu nombre
+1. Crea un formulario en [Google Forms](https://docs.google.com/forms/)
+2. Añade los campos: Nombre, Email, Mensaje
+3. Personaliza el diseño del formulario
+4. Click en "Enviar" > pestaña "<>" (Insertar HTML)
+5. Copia la URL del atributo `src` del iframe
 
-4. Copia tus credenciales al archivo `.env`:
+6. Añade la URL al archivo `.env`:
 ```env
-VITE_EMAILJS_SERVICE_ID=tu_service_id
-VITE_EMAILJS_TEMPLATE_ID=tu_template_id
-VITE_EMAILJS_PUBLIC_KEY=tu_public_key
+VITE_GOOGLE_FORM_URL=https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true
 ```
 
 ### 5. Agregar tu Foto
