@@ -1,0 +1,68 @@
+{
+  "frontend": [
+    {
+      "name": "React",
+      "icon": "react",
+      "level": 90,
+      "color": "#61dafb"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "level": 85,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Vite",
+      "icon": "vite",
+      "level": 80,
+      "color": "#646cff"
+    },
+    {
+      "name": "Ant Design",
+      "icon": "antd",
+      "level": 85,
+      "color": "#0170fe"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "level": 90,
+      "color": "#f7df1e"
+    },
+    {
+      "name": "HTML5",
+      "icon": "html",
+      "level": 95,
+      "color": "#e34f26"
+    },
+    {
+      "name": "CSS3",
+      "icon": "css",
+      "level": 90,
+      "color": "#1572b6"
+    },
+    {
+      "name": "Framer Motion",
+      "icon": "framer",
+      "level": 75,
+      "color": "#ff0055"
+    }
+  ],
+  "backend": [
+    {
+      "name": "Node.js",
+      "icon": "nodejs",
+      "level": 70,
+      "color": "#339933"
+    }
+  ],
+  "learning": [
+    {
+      "name": "MySQL",
+      "icon": "mysql",
+      "level": 50,
+      "color": "#4479a1"
+    }
+  ]
+}

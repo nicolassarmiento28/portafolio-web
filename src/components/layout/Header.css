@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.header-scrolled {
+  background: rgba(30, 30, 46, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 245, 255, 0.1);
+  padding: 10px 0;
+}
+
+[data-theme='light'] .header-scrolled {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-initials {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.nav-desktop {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  background: transparent !important;
+  border-bottom: none !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-menu .ant-menu-item {
+  color: var(--text-secondary) !important;
+  transition: all 0.3s ease;
+}
+
+.nav-menu .ant-menu-item:hover {
+  color: var(--accent-primary) !important;
+}
+
+.nav-menu .ant-menu-item-selected {
+  color: var(--accent-primary) !important;
+  border-bottom: 2px solid var(--accent-primary) !important;
+}
+
+.nav-menu .ant-menu-item::after {
+  border-bottom: none !important;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-menu-button {
+  display: none;
+  color: var(--text-primary);
+  font-size: 24px;
+}
+
+.mobile-drawer .ant-drawer-header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-drawer .ant-drawer-body {
+  background: var(--bg-primary);
+  padding: 0;
+}
+
+.mobile-drawer .ant-menu {
+  background: transparent;
+  border-right: none;
+  font-size: 18px;
+}
+
+.mobile-drawer .ant-menu-item {
+  color: var(--text-secondary);
+  padding: 20px 24px;
+}
+
+.mobile-drawer .ant-menu-item:hover {
+  color: var(--accent-primary);
+  background: var(--bg-card);
+}
+
+.mobile-drawer .ant-menu-item-selected {
+  color: var(--accent-primary);
+  background: var(--bg-card);
+}
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .logo-initials {
+    font-size: 28px;
+  }
+}

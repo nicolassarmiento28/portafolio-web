@@ -1,0 +1,227 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Proyecto E-Commerce",
+      "description": "Plataforma de comercio electrónico moderna con carrito de compras, sistema de pagos y panel de administración.",
+      "thumbnail": "/projects/project1/thumb.jpg",
+      "images": [
+        "/projects/project1/img1.jpg",
+        "/projects/project1/img2.jpg",
+        "/projects/project1/img3.jpg"
+      ],
+      "details": {
+        "challenge": "Crear una experiencia de compra fluida y segura que maneje múltiples productos, usuarios y transacciones en tiempo real.",
+        "solution": "Desarrollé una SPA con React y TypeScript, implementando estado global con Context API, autenticación JWT y pasarela de pagos integrada.",
+        "impact": "Reducción del 40% en tiempo de carga, aumento del 25% en conversiones y experiencia de usuario mejorada con animaciones fluidas."
+      },
+      "features": [
+        "Carrito de compras con persistencia",
+        "Sistema de autenticación y autorización",
+        "Integración con pasarela de pagos",
+        "Panel de administración completo",
+        "Búsqueda y filtros avanzados",
+        "Responsive design optimizado"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "Ant Design",
+          "icon": "antd",
+          "color": "#0170fe"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs",
+          "color": "#339933"
+        }
+      ],
+      "links": {
+        "live": "https://tu-proyecto-1.vercel.app",
+        "github": "https://github.com/tu-usuario/proyecto-1"
+      },
+      "tags": ["E-Commerce", "Frontend", "Backend", "Full Stack"],
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Dashboard Analytics",
+      "description": "Dashboard interactivo para visualización de datos en tiempo real con gráficos y estadísticas avanzadas.",
+      "thumbnail": "/projects/project2/thumb.jpg",
+      "images": [
+        "/projects/project2/img1.jpg",
+        "/projects/project2/img2.jpg",
+        "/projects/project2/img3.jpg"
+      ],
+      "details": {
+        "challenge": "Visualizar grandes cantidades de datos complejos de forma clara y permitir análisis en tiempo real.",
+        "solution": "Implementé un dashboard con gráficos interactivos, filtros dinámicos y actualización en tiempo real usando WebSockets.",
+        "impact": "Mejora del 60% en tiempo de análisis de datos y feedback positivo del 95% de usuarios por la interfaz intuitiva."
+      },
+      "features": [
+        "Gráficos interactivos con múltiples tipos",
+        "Filtros y búsqueda en tiempo real",
+        "Exportación de datos a CSV/PDF",
+        "Sistema de notificaciones",
+        "Modo oscuro/claro",
+        "Performance optimizada para grandes datasets"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "Ant Design",
+          "icon": "antd",
+          "color": "#0170fe"
+        }
+      ],
+      "links": {
+        "live": "https://tu-proyecto-2.vercel.app",
+        "github": "https://github.com/tu-usuario/proyecto-2"
+      },
+      "tags": ["Dashboard", "Analytics", "Data Visualization", "Real-time"],
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "Task Management App",
+      "description": "Aplicación de gestión de tareas con funcionalidades de colaboración en equipo y seguimiento de proyectos.",
+      "thumbnail": "/projects/project3/thumb.jpg",
+      "images": [
+        "/projects/project3/img1.jpg",
+        "/projects/project3/img2.jpg",
+        "/projects/project3/img3.jpg"
+      ],
+      "details": {
+        "challenge": "Facilitar la colaboración en equipo y mejorar la productividad mediante una herramienta de gestión simple pero potente.",
+        "solution": "Creé una app con tableros Kanban, asignación de tareas, comentarios en tiempo real y notificaciones push.",
+        "impact": "Aumento del 35% en productividad de equipos y reducción del 50% en reuniones innecesarias."
+      },
+      "features": [
+        "Tableros Kanban personalizables",
+        "Asignación y seguimiento de tareas",
+        "Comentarios y colaboración en tiempo real",
+        "Sistema de notificaciones",
+        "Calendario integrado",
+        "Reportes de productividad"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "Ant Design",
+          "icon": "antd",
+          "color": "#0170fe"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs",
+          "color": "#339933"
+        }
+      ],
+      "links": {
+        "live": "https://tu-proyecto-3.vercel.app",
+        "github": "https://github.com/tu-usuario/proyecto-3"
+      },
+      "tags": ["Productivity", "Collaboration", "Task Management", "Real-time"],
+      "featured": true
+    },
+    {
+      "id": "4",
+      "title": "Portfolio Personal",
+      "description": "Portafolio web moderno y responsivo con animaciones fluidas y diseño creativo para mostrar proyectos.",
+      "thumbnail": "/projects/project4/thumb.jpg",
+      "images": [
+        "/projects/project4/img1.jpg",
+        "/projects/project4/img2.jpg",
+        "/projects/project4/img3.jpg"
+      ],
+      "details": {
+        "challenge": "Crear un portafolio que destaque visualmente y demuestre habilidades técnicas mediante código limpio y diseño audaz.",
+        "solution": "Diseñé y desarrollé un sitio SPA con Cyber Neon theme, animaciones con Framer Motion y arquitectura escalable.",
+        "impact": "Aumento del 80% en visitas tras el rediseño y múltiples contactos profesionales gracias al impacto visual."
+      },
+      "features": [
+        "Diseño Cyber Neon con gradientes",
+        "Animaciones fluidas con Framer Motion",
+        "Modo oscuro/claro",
+        "Formulario de contacto funcional",
+        "Responsive design premium",
+        "Performance optimizada"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "Ant Design",
+          "icon": "antd",
+          "color": "#0170fe"
+        },
+        {
+          "name": "Framer Motion",
+          "icon": "framer",
+          "color": "#ff0055"
+        }
+      ],
+      "links": {
+        "live": "https://tu-portfolio.vercel.app",
+        "github": "https://github.com/tu-usuario/portfolio"
+      },
+      "tags": ["Portfolio", "Design", "Animation", "Frontend"],
+      "featured": true
+    }
+  ]
+}

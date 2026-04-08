@@ -1,0 +1,260 @@
+.project-modal .ant-modal-content {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.project-modal .ant-modal-close {
+  color: var(--text-primary);
+}
+
+.project-modal .ant-modal-close:hover {
+  color: var(--accent-primary);
+}
+
+.project-modal-content {
+  padding: 20px;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.modal-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.modal-tags {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.modal-tag {
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid var(--accent-primary);
+  color: var(--accent-primary);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-button {
+  height: 50px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.modal-button-primary {
+  background: var(--gradient-primary);
+  border: none;
+  box-shadow: var(--shadow-glow);
+}
+
+.modal-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-strong);
+}
+
+.modal-button-secondary {
+  background: transparent;
+  border: 2px solid var(--accent-tertiary);
+  color: var(--accent-tertiary);
+}
+
+.modal-button-secondary:hover {
+  background: var(--accent-tertiary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(131, 56, 236, 0.5);
+}
+
+.modal-gallery {
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.carousel-item {
+  height: 500px;
+  background: var(--bg-secondary);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-dots {
+  margin-bottom: 20px;
+}
+
+.carousel-dots li button {
+  background: var(--accent-primary) !important;
+}
+
+.modal-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.detail-card {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  transition: all 0.3s ease;
+}
+
+.detail-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-5px);
+}
+
+.detail-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+}
+
+.detail-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.modal-features {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.feature-item {
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.feature-bullet {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.feature-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.modal-tech-stack {
+  margin-bottom: 20px;
+}
+
+.tech-stack-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-item {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  background: var(--bg-card);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  box-shadow: 0 8px 24px rgba(0, 245, 255, 0.2);
+}
+
+.tech-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .modal-title {
+    font-size: 32px;
+  }
+
+  .modal-subtitle {
+    font-size: 16px;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  .modal-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal-button {
+    width: 100%;
+  }
+}

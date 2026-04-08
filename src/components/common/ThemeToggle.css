@@ -1,0 +1,17 @@
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-switch {
+  background-color: var(--accent-primary) !important;
+}
+
+.theme-switch:hover {
+  box-shadow: var(--shadow-glow) !important;
+}
+
+.ant-switch-checked {
+  background-color: var(--accent-tertiary) !important;
+}
