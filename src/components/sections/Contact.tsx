@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Form, Input, Button, message } from 'antd';
-import { MailOutlined, UserOutlined, MessageOutlined, SendOutlined } from '@ant-design/icons';
+import { MailOutlined, UserOutlined, SendOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { fadeInUp, fadeInLeft, fadeInRight } from '../../utils/animations';

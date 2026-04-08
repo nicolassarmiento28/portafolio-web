@@ -37,12 +37,6 @@
       "color": "#e34f26"
     },
     {
-      "name": "CSS3",
-      "icon": "css",
-      "level": 90,
-      "color": "#1572b6"
-    },
-    {
       "name": "Framer Motion",
       "icon": "framer",
       "level": 75,

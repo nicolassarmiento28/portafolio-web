@@ -1,7 +1,7 @@
 import { Card, Tag } from 'antd';
 import { EyeOutlined, GithubOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 import './ProjectCard.css';
 
 interface ProjectCardProps {

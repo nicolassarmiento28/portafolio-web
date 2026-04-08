@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer, fadeInUp } from '../../utils/animations';
 import ProjectCard from '../project/ProjectCard';
 import ProjectModal from '../project/ProjectModal';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 import projectsData from '../../data/projects.json';
 import './Projects.css';
 

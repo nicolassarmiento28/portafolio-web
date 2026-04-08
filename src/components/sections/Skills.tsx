@@ -6,7 +6,6 @@ import {
   SiVite, 
   SiJavascript, 
   SiHtml5, 
-  SiCss3, 
   SiNodedotjs, 
   SiMysql,
   SiFramer
@@ -23,7 +22,6 @@ const Skills = () => {
     vite: SiVite,
     javascript: SiJavascript,
     html: SiHtml5,
-    css: SiCss3,
     nodejs: SiNodedotjs,
     mysql: SiMysql,
     antd: AntDesignOutlined,

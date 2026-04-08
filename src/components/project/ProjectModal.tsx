@@ -1,7 +1,7 @@
 import { Modal, Tag, Button, Carousel } from 'antd';
 import { GithubOutlined, LinkOutlined, CloseOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 import './ProjectModal.css';
 
 interface ProjectModalProps {
