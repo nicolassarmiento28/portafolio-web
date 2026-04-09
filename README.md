@@ -1,204 +1,109 @@
-# Portafolio Web - Desarrollador Full Stack Junior
+# Portafolio Web
 
-Portafolio personal moderno con diseño Cyber Neon, construido con React, TypeScript, Vite y Ant Design.
+Portafolio personal moderno con estilo Cyber Neon. El proyecto esta construido con React, TypeScript, Vite, Ant Design y Framer Motion.
 
-## Características
+## Demo
 
-- **Diseño Cyber Neon**: Paleta de colores vibrante con gradientes y efectos de neón
-- **Modo Oscuro/Claro**: Toggle para cambiar entre temas
-- **Single Page Application**: Navegación suave entre secciones
-- **Animaciones Fluidas**: Implementadas con Framer Motion
-- **Responsive Design**: Optimizado para todos los dispositivos
-- **Proyectos Dinámicos**: Grid de 4 proyectos con modals detallados
-- **Skills Categorizada**: Frontend, Backend y Aprendiendo
-- **Formulario de Contacto**: Integración con Google Forms
-- **Performance Optimizada**: Carga rápida y eficiente
+- Repositorio: https://github.com/nicolassarmiento28/portafolio-web
 
-## Stack Tecnológico
+## Caracteristicas
 
-- **React 18** - Librería UI
-- **TypeScript** - Tipado estático
-- **Vite** - Build tool
-- **Ant Design 5** - Componentes UI
-- **Framer Motion** - Animaciones
-- **Google Forms** - Formulario de contacto
-- **React Icons** - Iconos
+- SPA con navegacion por secciones
+- Modo oscuro y claro
+- Animaciones fluidas con Framer Motion
+- Seccion de proyectos con modal de detalle
+- Seccion de habilidades por categorias
+- Formulario de contacto integrado con EmailJS
+- Diseno responsive para movil, tablet y desktop
 
-## Instalación
+## Stack
 
-1. Clona el repositorio:
+- React 19
+- TypeScript
+- Vite
+- Ant Design
+- Framer Motion
+- EmailJS
+- React Hook Form
+- React Icons
+
+## Requisitos
+
+- Node.js 20 o superior (recomendado)
+- npm
+
+## Instalacion y uso local
+
 ```bash
-git clone <tu-repositorio>
-cd portfolio
-```
-
-2. Instala las dependencias:
-```bash
+git clone https://github.com/nicolassarmiento28/portafolio-web.git
+cd portafolio-web
 npm install
-```
-
-3. Configura las variables de entorno:
-```bash
-cp .env.example .env
-```
-
-4. Edita el archivo `.env` con tu URL de Google Forms (ver sección de configuración)
-
-## Configuración
-
-### 1. Personalizar Información Personal
-
-Edita `src/data/personal.json`:
-```json
-{
-  "fullName": "Tu Nombre Completo",
-  "title": "Desarrollador Full Stack Junior",
-  "initials": "TN",
-  "bio": "Tu biografía...",
-  "email": "tu.email@example.com",
-  "location": "Tu Ciudad, País",
-  "socialLinks": {
-    "github": "https://github.com/tu-usuario",
-    "linkedin": "https://linkedin.com/in/tu-usuario",
-    "twitter": "https://twitter.com/tu-usuario",
-    "email": "tu.email@example.com"
-  }
-}
-```
-
-### 2. Configurar Proyectos
-
-Edita `src/data/projects.json` con tus 4 proyectos.
-
-Coloca las imágenes de tus proyectos en:
-```
-public/
-  └── projects/
-      ├── project1/
-      │   ├── thumb.jpg
-      │   ├── img1.jpg
-      │   ├── img2.jpg
-      │   └── img3.jpg
-      ├── project2/
-      └── ...
-```
-
-### 3. Configurar Skills
-
-Edita `src/data/skills.json` para ajustar tus niveles de habilidad.
-
-### 4. Configurar Google Forms
-
-1. Crea un formulario en [Google Forms](https://docs.google.com/forms/)
-2. Añade los campos: Nombre, Email, Mensaje
-3. Personaliza el diseño del formulario
-4. Click en "Enviar" > pestaña "<>" (Insertar HTML)
-5. Copia la URL del atributo `src` del iframe
-
-6. Añade la URL al archivo `.env`:
-```env
-VITE_GOOGLE_FORM_URL=https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true
-```
-
-### 5. Agregar tu Foto
-
-Coloca tu foto en `public/profile.jpg`
-
-### 6. Agregar tu CV
-
-Coloca tu CV en `public/cv/CV-TuNombre.pdf`
-
-## Scripts Disponibles
-
-```bash
-# Desarrollo
 npm run dev
-
-# Build de producción
-npm run build
-
-# Preview del build
-npm run preview
-
-# Lint
-npm run lint
 ```
 
-## Deployment en Vercel
+La app se ejecuta por defecto en http://localhost:5173
 
-1. Sube tu repositorio a GitHub
+## Variables de entorno
 
-2. Conecta tu repositorio con Vercel:
-   - Ve a [Vercel](https://vercel.com/)
-   - Importa tu repositorio
-   - Configura las variables de entorno en Vercel (Settings > Environment Variables)
+1. Crea una copia de `.env.example` como `.env`.
+2. Completa estos valores:
 
-3. Deploy automático:
-   - Cada push a la rama principal desplegará automáticamente
-
-## Estructura del Proyecto
-
+```env
+VITE_EMAILJS_SERVICE_ID=tu_service_id
+VITE_EMAILJS_TEMPLATE_ID=tu_template_id
+VITE_EMAILJS_PUBLIC_KEY=tu_public_key
 ```
+
+## Scripts
+
+```bash
+npm run dev      # entorno de desarrollo
+npm run build    # build de produccion
+npm run preview  # vista previa del build
+npm run lint     # lint del proyecto
+```
+
+## Personalizacion de contenido
+
+- Datos personales: `src/data/personal.json`
+- Proyectos: `src/data/projects.json`
+- Habilidades: `src/data/skills.json`
+- Foto de perfil: `public/profile.jpg`
+- CV: `public/cv/`
+
+## Despliegue
+
+Puedes desplegar facilmente en Vercel o Netlify.
+
+Pasos generales:
+
+1. Sube cambios a la rama principal en GitHub.
+2. Importa el repositorio en tu plataforma de despliegue.
+3. Agrega las variables de entorno de EmailJS.
+4. Ejecuta deploy.
+
+## Estructura principal
+
+```text
 portfolio/
-├── public/
-│   ├── projects/          # Imágenes de proyectos
-│   ├── cv/                # Tu CV en PDF
-│   └── profile.jpg        # Tu foto
-├── src/
-│   ├── components/
-│   │   ├── common/        # Componentes reutilizables
-│   │   ├── layout/        # Header, Footer
-│   │   ├── project/       # Componentes de proyectos
-│   │   └── sections/      # Secciones principales
-│   ├── context/           # Context API (Theme)
-│   ├── data/              # Archivos JSON con datos
-│   ├── hooks/             # Custom hooks
-│   ├── styles/            # Estilos globales
-│   ├── types/             # TypeScript types
-│   ├── utils/             # Utilidades (animaciones)
-│   ├── App.tsx
-│   └── main.tsx
-├── .env.example
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
+  public/
+  src/
+    components/
+    context/
+    data/
+    hooks/
+    styles/
+    types/
+    utils/
+  .env.example
+  package.json
+  README.md
 ```
-
-## Personalización de Colores
-
-Los colores Cyber Neon están definidos en `src/styles/global.css`:
-
-```css
-:root {
-  --accent-primary: #00f5ff;      /* Cyan neón */
-  --accent-secondary: #ff006e;    /* Magenta */
-  --accent-tertiary: #8338ec;     /* Púrpura */
-}
-```
-
-## Performance
-
-- Lazy loading de imágenes
-- Code splitting automático con Vite
-- Animaciones optimizadas con Framer Motion
-- Bundle size optimizado
-
-## Soporte de Navegadores
-
-- Chrome (último)
-- Firefox (último)
-- Safari (último)
-- Edge (último)
 
 ## Licencia
 
-MIT License - Siéntete libre de usar este proyecto para tu propio portafolio.
+MIT
 
 ## Autor
 
-Tu Nombre - [GitHub](https://github.com/tu-usuario) - [LinkedIn](https://linkedin.com/in/tu-usuario)
-
----
-
-Hecho con ❤️ usando React, TypeScript y Vite
+Nicolas Sarmiento
