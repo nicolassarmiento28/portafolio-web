@@ -59,6 +59,7 @@ const Header = () => {
             mode="horizontal"
             selectedKeys={[activeSection]}
             className="nav-menu"
+            disabledOverflow
             items={menuItems.map(item => ({
               key: item.key,
               label: item.label,

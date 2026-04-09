@@ -1,19 +1,58 @@
-import { Button } from 'antd';
-import { MailOutlined, UserOutlined } from '@ant-design/icons';
+import { useState } from 'react';
+import { Form, Input, Button, message } from 'antd';
+import { MailOutlined, UserOutlined, SendOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import { fadeInUp, fadeInLeft, fadeInRight } from '../../utils/animations';
 import SocialLinks from '../common/SocialLinks';
 import personalData from '../../data/personal.json';
 import './Contact.css';
 
+const { TextArea } = Input;
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 const Contact = () => {
-  // URL del formulario de Google Forms
-  // Reemplaza esta URL con tu propia URL de Google Forms embebido
-  // Para obtener tu URL:
-  // 1. Crea tu formulario en Google Forms
-  // 2. Click en "Enviar" -> Pestaña "<>" (Insertar HTML)
-  // 3. Copia el src del iframe
-  const googleFormUrl = import.meta.env.VITE_GOOGLE_FORM_URL || 'https://docs.google.com/forms/d/e/TU_FORM_ID/viewform?embedded=true';
+  const [form] = Form.useForm();
+  const [loading, setLoading] = useState(false);
+
+  const onFinish = async (values: ContactFormData) => {
+    setLoading(true);
+
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS environment variables are missing.');
+      }
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: values.name,
+          from_email: values.email,
+          message: values.message,
+          to_name: personalData.fullName,
+        },
+        publicKey
+      );
+
+      message.success('Mensaje enviado correctamente. Te responderé pronto.');
+      form.resetFields();
+    } catch (error) {
+      console.error('Error sending email:', error);
+      message.error('No se pudo enviar el mensaje. Intenta nuevamente o escríbeme por correo.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div id="contact" className="contact-section">
@@ -79,7 +118,7 @@ const Contact = () => {
                   type="primary"
                   size="large"
                   className="cta-button"
-                  href="/cv/CV-TuNombre.pdf"
+                  href="/cv/CV_Nicolas_Sarmiento_2026.pdf"
                   download
                 >
                   Descargar CV
@@ -96,18 +135,67 @@ const Contact = () => {
             variants={fadeInRight}
           >
             <div className="form-card glass">
-              <iframe
-                src={googleFormUrl}
-                width="100%"
-                height="800"
-                frameBorder="0"
-                marginHeight={0}
-                marginWidth={0}
-                title="Formulario de Contacto"
-                className="google-form-iframe"
+              <Form
+                form={form}
+                layout="vertical"
+                onFinish={onFinish}
+                className="contact-form"
               >
-                Cargando…
-              </iframe>
+                <Form.Item
+                  name="name"
+                  rules={[{ required: true, message: 'Por favor ingresa tu nombre' }]}
+                >
+                  <Input
+                    prefix={<UserOutlined />}
+                    placeholder="Tu nombre"
+                    size="large"
+                    className="form-input"
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  name="email"
+                  rules={[
+                    { required: true, message: 'Por favor ingresa tu email' },
+                    { type: 'email', message: 'Ingresa un email valido' },
+                  ]}
+                >
+                  <Input
+                    prefix={<MailOutlined />}
+                    placeholder="tu@email.com"
+                    size="large"
+                    className="form-input"
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  name="message"
+                  rules={[
+                    { required: true, message: 'Por favor ingresa tu mensaje' },
+                    { min: 10, message: 'El mensaje debe tener al menos 10 caracteres' },
+                  ]}
+                >
+                  <TextArea
+                    placeholder="Cuentame sobre tu proyecto..."
+                    rows={6}
+                    className="form-textarea"
+                  />
+                </Form.Item>
+
+                <Form.Item>
+                  <Button
+                    type="primary"
+                    htmlType="submit"
+                    size="large"
+                    icon={<SendOutlined />}
+                    loading={loading}
+                    className="submit-button"
+                    block
+                  >
+                    Enviar mensaje
+                  </Button>
+                </Form.Item>
+              </Form>
             </div>
           </motion.div>
         </div>

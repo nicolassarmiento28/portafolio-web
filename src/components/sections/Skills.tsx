@@ -1,4 +1,4 @@
-import { Row, Col, Progress } from 'antd';
+import { Row, Col } from 'antd';
 import { motion } from 'framer-motion';
 import { 
   SiReact, 
@@ -39,21 +39,12 @@ const Skills = () => {
         className="skill-card glass"
         variants={scaleIn}
         whileHover={{ scale: 1.05, y: -10 }}
+        title={skill.name}
       >
         <div className="skill-icon" style={{ color: skill.color }}>
           {getIcon(skill.icon)}
         </div>
         <div className="skill-name">{skill.name}</div>
-        <Progress
-          percent={skill.level}
-          strokeColor={{
-            '0%': skill.color,
-            '100%': skill.color,
-          }}
-          showInfo={false}
-          className="skill-progress"
-        />
-        <div className="skill-level">{skill.level}%</div>
       </motion.div>
     </Col>
   );
@@ -87,7 +78,7 @@ const Skills = () => {
           <motion.h3 className="category-title" variants={fadeInUp}>
             <span className="gradient-text">Frontend</span>
           </motion.h3>
-          <Row gutter={[24, 24]}>
+          <Row gutter={[24, 24]} justify="center">
             {skillsData.frontend.map((skill, index) => renderSkillCard(skill, index))}
           </Row>
         </motion.div>
@@ -103,7 +94,7 @@ const Skills = () => {
           <motion.h3 className="category-title" variants={fadeInUp}>
             <span className="gradient-text">Backend</span>
           </motion.h3>
-          <Row gutter={[24, 24]}>
+          <Row gutter={[24, 24]} justify="center">
             {skillsData.backend.map((skill, index) => renderSkillCard(skill, index))}
           </Row>
         </motion.div>
@@ -119,7 +110,7 @@ const Skills = () => {
           <motion.h3 className="category-title" variants={fadeInUp}>
             <span className="gradient-text">Aprendiendo</span>
           </motion.h3>
-          <Row gutter={[24, 24]}>
+          <Row gutter={[24, 24]} justify="center">
             {skillsData.learning.map((skill, index) => renderSkillCard(skill, index))}
           </Row>
         </motion.div>

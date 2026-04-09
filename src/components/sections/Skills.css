@@ -49,8 +49,7 @@
 }
 
 .skill-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
+  font-size: 52px;
   filter: drop-shadow(0 0 10px currentColor);
   transition: all 0.3s ease;
 }
@@ -63,24 +62,14 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 12px;
+  margin-top: 12px;
+  transition: all 0.3s ease;
 }
 
-.skill-progress {
-  width: 100%;
-  margin-bottom: 8px;
-}
-
-.skill-progress .ant-progress-bg {
-  height: 6px !important;
-  border-radius: 3px;
-  box-shadow: 0 0 10px currentColor;
-}
-
-.skill-level {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-secondary);
+.skill-card:hover .skill-name {
+  transform: translateY(-2px);
+  color: var(--accent-primary);
+  text-shadow: 0 0 12px rgba(0, 245, 255, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -93,7 +82,7 @@
   }
 
   .skill-icon {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .skill-name {

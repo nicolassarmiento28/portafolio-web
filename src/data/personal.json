@@ -1,14 +1,14 @@
 {
-  "fullName": "Tu Nombre Completo",
+  "fullName": "Nicolás Sarmiento",
   "title": "Desarrollador Full Stack Junior",
-  "initials": "TN",
+  "initials": "NS",
   "bio": "Soy un desarrollador full stack junior apasionado por crear experiencias web modernas y eficientes. Me especializo en React, TypeScript y tecnologías frontend, con conocimientos en desarrollo backend con Node.js. Me encanta aprender nuevas tecnologías y resolver problemas complejos mediante código limpio y escalable. Mi objetivo es construir aplicaciones que no solo funcionen bien, sino que también brinden una experiencia de usuario excepcional.",
-  "email": "tu.email@example.com",
-  "location": "Tu Ciudad, País",
+  "email": "nicolas.sarmiento.jimenez@gmail.com",
+  "location": "Viña del Mar, Chile",
   "socialLinks": {
-    "github": "https://github.com/tu-usuario",
-    "linkedin": "https://linkedin.com/in/tu-usuario",
+    "github": "https://github.com/nicolassarmiento28",
+    "linkedin": "https://www.linkedin.com/in/nicolas-sarmiento-303327265/",
     "twitter": "https://twitter.com/tu-usuario",
-    "email": "tu.email@example.com"
+    "email": "nicolas.sarmiento.jimenez@gmail.com"
   }
 }

@@ -19,12 +19,6 @@
       "color": "#646cff"
     },
     {
-      "name": "Ant Design",
-      "icon": "antd",
-      "level": 85,
-      "color": "#0170fe"
-    },
-    {
       "name": "JavaScript",
       "icon": "javascript",
       "level": 90,
@@ -35,12 +29,6 @@
       "icon": "html",
       "level": 95,
       "color": "#e34f26"
-    },
-    {
-      "name": "Framer Motion",
-      "icon": "framer",
-      "level": 75,
-      "color": "#ff0055"
     }
   ],
   "backend": [

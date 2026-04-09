@@ -1,4 +1,4 @@
-import { GithubOutlined, LinkedinOutlined, TwitterOutlined, MailOutlined } from '@ant-design/icons';
+import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import personalData from '../../data/personal.json';
 import './SocialLinks.css';
@@ -15,8 +15,6 @@ const SocialLinks = ({ size = 'medium' }: SocialLinksProps) => {
   const socialIcons = [
     { icon: <GithubOutlined style={{ fontSize: iconSize }} />, url: socialLinks.github, label: 'GitHub' },
     { icon: <LinkedinOutlined style={{ fontSize: iconSize }} />, url: socialLinks.linkedin, label: 'LinkedIn' },
-    { icon: <TwitterOutlined style={{ fontSize: iconSize }} />, url: socialLinks.twitter, label: 'Twitter' },
-    { icon: <MailOutlined style={{ fontSize: iconSize }} />, url: `mailto:${socialLinks.email}`, label: 'Email' },
   ];
 
   return (

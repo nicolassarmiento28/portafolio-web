@@ -25,7 +25,12 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
               alt={project.title}
               src={project.thumbnail}
               onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x300?text=Project+Image';
+                const target = e.target as HTMLImageElement;
+                if (project.images.length > 0 && target.src !== project.images[0]) {
+                  target.src = project.images[0];
+                  return;
+                }
+                target.src = 'https://via.placeholder.com/400x300?text=Project+Image';
               }}
             />
             <div className="project-card-overlay">

@@ -2,26 +2,25 @@
   "projects": [
     {
       "id": "1",
-      "title": "Proyecto E-Commerce",
-      "description": "Plataforma de comercio electrónico moderna con carrito de compras, sistema de pagos y panel de administración.",
+      "title": "Buscador de Peliculas React",
+      "description": "Aplicacion web para buscar peliculas por titulo y explorar resultados de forma rapida con una interfaz clara y responsive.",
       "thumbnail": "/projects/project1/thumb.jpg",
       "images": [
         "/projects/project1/img1.jpg",
-        "/projects/project1/img2.jpg",
-        "/projects/project1/img3.jpg"
+        "/projects/project1/img2.jpg"
       ],
       "details": {
-        "challenge": "Crear una experiencia de compra fluida y segura que maneje múltiples productos, usuarios y transacciones en tiempo real.",
-        "solution": "Desarrollé una SPA con React y TypeScript, implementando estado global con Context API, autenticación JWT y pasarela de pagos integrada.",
-        "impact": "Reducción del 40% en tiempo de carga, aumento del 25% en conversiones y experiencia de usuario mejorada con animaciones fluidas."
+        "challenge": "Construir un buscador intuitivo que permita encontrar peliculas rapidamente sin saturar al usuario con una interfaz compleja.",
+        "solution": "Implemente una SPA en React que consulta datos de peliculas, renderiza resultados dinamicos y organiza la informacion en tarjetas visuales.",
+        "impact": "Permite descubrir peliculas en segundos con una experiencia fluida y adaptable a distintos tamanos de pantalla."
       },
       "features": [
-        "Carrito de compras con persistencia",
-        "Sistema de autenticación y autorización",
-        "Integración con pasarela de pagos",
-        "Panel de administración completo",
-        "Búsqueda y filtros avanzados",
-        "Responsive design optimizado"
+        "Busqueda por titulo en tiempo real",
+        "Listado de resultados en tarjetas",
+        "Vista responsive para movil y desktop",
+        "Interfaz limpia y enfocada en usabilidad",
+        "Consumo de API para obtener informacion",
+        "Manejo de estados en React"
       ],
       "techStack": [
         {
@@ -30,55 +29,44 @@
           "color": "#61dafb"
         },
         {
-          "name": "TypeScript",
-          "icon": "typescript",
-          "color": "#3178c6"
-        },
-        {
           "name": "Vite",
           "icon": "vite",
           "color": "#646cff"
         },
         {
-          "name": "Ant Design",
-          "icon": "antd",
-          "color": "#0170fe"
-        },
-        {
-          "name": "Node.js",
-          "icon": "nodejs",
-          "color": "#339933"
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
         }
       ],
       "links": {
-        "live": "https://tu-proyecto-1.vercel.app",
-        "github": "https://github.com/tu-usuario/proyecto-1"
+        "live": "https://app-buscador-peliculas-react-nsj.netlify.app",
+        "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
       },
-      "tags": ["E-Commerce", "Frontend", "Backend", "Full Stack"],
+      "tags": ["React", "Buscador", "Peliculas", "Frontend"],
       "featured": true
     },
     {
       "id": "2",
-      "title": "Dashboard Analytics",
-      "description": "Dashboard interactivo para visualización de datos en tiempo real con gráficos y estadísticas avanzadas.",
+      "title": "Carrito de Compras React",
+      "description": "Aplicacion de carrito de compras desarrollada en React para gestionar productos, cantidades y total de compra de forma dinamica.",
       "thumbnail": "/projects/project2/thumb.jpg",
       "images": [
         "/projects/project2/img1.jpg",
-        "/projects/project2/img2.jpg",
-        "/projects/project2/img3.jpg"
+        "/projects/project2/img2.jpg"
       ],
       "details": {
-        "challenge": "Visualizar grandes cantidades de datos complejos de forma clara y permitir análisis en tiempo real.",
-        "solution": "Implementé un dashboard con gráficos interactivos, filtros dinámicos y actualización en tiempo real usando WebSockets.",
-        "impact": "Mejora del 60% en tiempo de análisis de datos y feedback positivo del 95% de usuarios por la interfaz intuitiva."
+        "challenge": "Crear una experiencia de compra simple y funcional donde el usuario pueda agregar y administrar productos facilmente.",
+        "solution": "Desarrolle una interfaz en React con manejo de estado para carrito, calculo automatico de totales y actualizacion inmediata de la vista.",
+        "impact": "Permite simular un flujo de compra real, mejorando la experiencia de usuario con interacciones rapidas y claras."
       },
       "features": [
-        "Gráficos interactivos con múltiples tipos",
-        "Filtros y búsqueda en tiempo real",
-        "Exportación de datos a CSV/PDF",
-        "Sistema de notificaciones",
-        "Modo oscuro/claro",
-        "Performance optimizada para grandes datasets"
+        "Agregar productos al carrito",
+        "Modificar cantidades de productos",
+        "Eliminar productos del carrito",
+        "Calculo automatico del total",
+        "Renderizado dinamico de items",
+        "Interfaz responsive y amigable"
       ],
       "techStack": [
         {
@@ -87,50 +75,44 @@
           "color": "#61dafb"
         },
         {
-          "name": "TypeScript",
-          "icon": "typescript",
-          "color": "#3178c6"
-        },
-        {
           "name": "Vite",
           "icon": "vite",
           "color": "#646cff"
         },
         {
-          "name": "Ant Design",
-          "icon": "antd",
-          "color": "#0170fe"
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
         }
       ],
       "links": {
-        "live": "https://tu-proyecto-2.vercel.app",
-        "github": "https://github.com/tu-usuario/proyecto-2"
+        "live": "https://carrito-compras-react-nsj.netlify.app",
+        "github": "https://github.com/nicolassarmiento28/carritodecompras-react"
       },
-      "tags": ["Dashboard", "Analytics", "Data Visualization", "Real-time"],
+      "tags": ["React", "Carrito", "Ecommerce", "Frontend"],
       "featured": true
     },
     {
       "id": "3",
-      "title": "Task Management App",
-      "description": "Aplicación de gestión de tareas con funcionalidades de colaboración en equipo y seguimiento de proyectos.",
+      "title": "Lista de Tareas React + TSX",
+      "description": "Aplicación de tareas desarrollada con React y TypeScript para crear, organizar y dar seguimiento a pendientes diarios.",
       "thumbnail": "/projects/project3/thumb.jpg",
       "images": [
         "/projects/project3/img1.jpg",
-        "/projects/project3/img2.jpg",
-        "/projects/project3/img3.jpg"
+        "/projects/project3/img2.jpg"
       ],
       "details": {
-        "challenge": "Facilitar la colaboración en equipo y mejorar la productividad mediante una herramienta de gestión simple pero potente.",
-        "solution": "Creé una app con tableros Kanban, asignación de tareas, comentarios en tiempo real y notificaciones push.",
-        "impact": "Aumento del 35% en productividad de equipos y reducción del 50% en reuniones innecesarias."
+        "challenge": "Construir una interfaz simple y ordenada para administrar tareas de forma rapida sin perder claridad en el flujo.",
+        "solution": "Desarrolle la aplicacion con componentes en React y tipado estricto en TypeScript para manejar estados, eventos y validaciones del formulario.",
+        "impact": "Mejora la organizacion personal al centralizar pendientes en una sola vista y facilita el seguimiento diario de actividades."
       },
       "features": [
-        "Tableros Kanban personalizables",
-        "Asignación y seguimiento de tareas",
-        "Comentarios y colaboración en tiempo real",
-        "Sistema de notificaciones",
-        "Calendario integrado",
-        "Reportes de productividad"
+        "Agregar nuevas tareas",
+        "Marcar tareas completadas",
+        "Eliminar tareas",
+        "Interfaz limpia y responsive",
+        "Estado gestionado en React",
+        "Tipado seguro con TypeScript"
       ],
       "techStack": [
         {
@@ -152,42 +134,36 @@
           "name": "Ant Design",
           "icon": "antd",
           "color": "#0170fe"
-        },
-        {
-          "name": "Node.js",
-          "icon": "nodejs",
-          "color": "#339933"
         }
       ],
       "links": {
-        "live": "https://tu-proyecto-3.vercel.app",
-        "github": "https://github.com/tu-usuario/proyecto-3"
+        "live": "https://lista-tareas-react-tsx-ns.netlify.app",
+        "github": "https://github.com/nicolassarmiento28/lista-tareas-react-tsx"
       },
-      "tags": ["Productivity", "Collaboration", "Task Management", "Real-time"],
+      "tags": ["React", "TypeScript", "TSX", "Task Manager"],
       "featured": true
     },
     {
       "id": "4",
-      "title": "Portfolio Personal",
-      "description": "Portafolio web moderno y responsivo con animaciones fluidas y diseño creativo para mostrar proyectos.",
+      "title": "App Clima React",
+      "description": "Aplicacion del clima desarrollada en React para consultar condiciones meteorologicas en tiempo real por ciudad.",
       "thumbnail": "/projects/project4/thumb.jpg",
       "images": [
         "/projects/project4/img1.jpg",
-        "/projects/project4/img2.jpg",
-        "/projects/project4/img3.jpg"
+        "/projects/project4/img2.jpg"
       ],
       "details": {
-        "challenge": "Crear un portafolio que destaque visualmente y demuestre habilidades técnicas mediante código limpio y diseño audaz.",
-        "solution": "Diseñé y desarrollé un sitio SPA con Cyber Neon theme, animaciones con Framer Motion y arquitectura escalable.",
-        "impact": "Aumento del 80% en visitas tras el rediseño y múltiples contactos profesionales gracias al impacto visual."
+        "challenge": "Mostrar informacion del clima de forma clara y rapida para distintas ciudades, evitando una interfaz confusa.",
+        "solution": "Implemente una app en React que consume una API meteorologica y presenta temperatura, estado del clima y datos clave en una vista amigable.",
+        "impact": "Facilita consultas meteorologicas en segundos con una experiencia responsive y enfocada en usabilidad."
       },
       "features": [
-        "Diseño Cyber Neon con gradientes",
-        "Animaciones fluidas con Framer Motion",
-        "Modo oscuro/claro",
-        "Formulario de contacto funcional",
-        "Responsive design premium",
-        "Performance optimizada"
+        "Busqueda de clima por ciudad",
+        "Consulta de datos en tiempo real",
+        "Visualizacion de temperatura y estado",
+        "Manejo de errores de consulta",
+        "Interfaz responsive para movil y desktop",
+        "Integracion con API externa"
       ],
       "techStack": [
         {
@@ -196,31 +172,21 @@
           "color": "#61dafb"
         },
         {
-          "name": "TypeScript",
-          "icon": "typescript",
-          "color": "#3178c6"
-        },
-        {
           "name": "Vite",
           "icon": "vite",
           "color": "#646cff"
         },
         {
-          "name": "Ant Design",
-          "icon": "antd",
-          "color": "#0170fe"
-        },
-        {
-          "name": "Framer Motion",
-          "icon": "framer",
-          "color": "#ff0055"
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
         }
       ],
       "links": {
-        "live": "https://tu-portfolio.vercel.app",
-        "github": "https://github.com/tu-usuario/portfolio"
+        "live": "https://app-clima-react-nsj.netlify.app/",
+        "github": "https://github.com/nicolassarmiento28/app-clima-react"
       },
-      "tags": ["Portfolio", "Design", "Animation", "Frontend"],
+      "tags": ["React", "Clima", "API", "Frontend"],
       "featured": true
     }
   ]
