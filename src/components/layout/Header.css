@@ -97,12 +97,27 @@
 .mobile-drawer .ant-menu {
   background: transparent;
   border-right: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .mobile-drawer .ant-menu-item {
   color: var(--text-secondary);
-  padding: 20px 24px;
+  padding: 14px 20px !important;
+  margin: 0 !important;
+  height: auto !important;
+  line-height: 1.35 !important;
+  white-space: normal;
+}
+
+.mobile-drawer .ant-menu-title-content {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  word-break: break-word;
+}
+
+.mobile-drawer .ant-drawer-content-wrapper {
+  width: min(92vw, 360px) !important;
 }
 
 .mobile-drawer .ant-menu-item:hover {
@@ -115,13 +130,23 @@
   background: var(--bg-card);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-desktop {
     display: none;
   }
 
   .mobile-menu-button {
     display: block;
+  }
+
+  .header-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-drawer .ant-menu {
+    font-size: 15px;
   }
 
   .logo-initials {
