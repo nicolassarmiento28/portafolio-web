@@ -86,6 +86,7 @@
   line-height: 1.8;
   color: var(--text-secondary);
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .about-info {
@@ -165,7 +166,7 @@
 
   .about-text {
     font-size: 16px;
-    text-align: justify;
+    text-align: left;
   }
 
   .about-highlights {
