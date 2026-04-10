@@ -7,6 +7,10 @@ import ThemeToggle from '../common/ThemeToggle';
 import personalData from '../../data/personal.json';
 import './Header.css';
 
+interface MenuClickInfo {
+  key: string;
+}
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,12 +33,25 @@ const Header = () => {
     { key: 'contact', label: 'Contacto' },
   ];
 
-  const handleMenuClick = (sectionId: string) => {
+  const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  };
+
+  const handleMenuClick = (sectionId: string) => {
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+      window.setTimeout(() => scrollToSection(sectionId), 180);
+      return;
+    }
+
+    scrollToSection(sectionId);
+  };
+
+  const handleMenuSelect = ({ key }: MenuClickInfo) => {
+    handleMenuClick(key);
   };
 
   return (
@@ -60,11 +77,8 @@ const Header = () => {
             selectedKeys={[activeSection]}
             className="nav-menu"
             disabledOverflow
-            items={menuItems.map(item => ({
-              key: item.key,
-              label: item.label,
-              onClick: () => handleMenuClick(item.key),
-            }))}
+            onClick={handleMenuSelect}
+            items={menuItems}
           />
         </nav>
 
@@ -89,11 +103,8 @@ const Header = () => {
           <Menu
             mode="vertical"
             selectedKeys={[activeSection]}
-            items={menuItems.map(item => ({
-              key: item.key,
-              label: item.label,
-              onClick: () => handleMenuClick(item.key),
-            }))}
+            onClick={handleMenuSelect}
+            items={menuItems}
           />
         </Drawer>
       </div>
