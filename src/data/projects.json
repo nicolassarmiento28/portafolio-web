@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "1",
-      "title": "Buscador de Peliculas React",
+      "title": "Buscador de Películas",
       "description": "Aplicacion web para buscar peliculas por titulo y explorar resultados de forma rapida con una interfaz clara y responsive.",
       "thumbnail": "/projects/project1/thumb.jpg",
       "images": [
@@ -48,7 +48,7 @@
     },
     {
       "id": "2",
-      "title": "Carrito de Compras React",
+      "title": "Carrito de Compras",
       "description": "Aplicacion de carrito de compras desarrollada en React para gestionar productos, cantidades y total de compra de forma dinamica.",
       "thumbnail": "/projects/project2/thumb.jpg",
       "images": [
@@ -94,7 +94,7 @@
     },
     {
       "id": "3",
-      "title": "Lista de Tareas React + TSX",
+      "title": "Lista de Tareas",
       "description": "Aplicación de tareas desarrollada con React y TypeScript para crear, organizar y dar seguimiento a pendientes diarios.",
       "thumbnail": "/projects/project3/thumb.jpg",
       "images": [
@@ -145,7 +145,7 @@
     },
     {
       "id": "4",
-      "title": "App Clima React",
+      "title": "Aplicación de Clima",
       "description": "Aplicacion del clima desarrollada en React para consultar condiciones meteorologicas en tiempo real por ciudad.",
       "thumbnail": "/projects/project4/thumb.jpg",
       "images": [
