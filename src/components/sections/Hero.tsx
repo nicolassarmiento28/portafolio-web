@@ -90,7 +90,7 @@ const Hero = () => {
               size="large"
               icon={<DownloadOutlined />}
               className="cta-download"
-              href="/cv/CV_Nicolas_Sarmiento_2026.pdf"
+              href="/cv/CV_Nicolas_Sarmiento_Final_v2.pdf"
               download
             >
               Descargar CV
