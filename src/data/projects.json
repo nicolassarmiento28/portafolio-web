@@ -40,32 +40,77 @@
         }
       ],
       "links": {
-        "live": "https://vg-collection-eight.vercel.app/",
-        "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
+        "live": "https://vg-collection-eight.vercel.app/"
       },
       "tags": ["React", "Videojuegos", "Colección", "Frontend"],
       "featured": true
     },
     {
       "id": "2",
-      "title": "Carrito de Compras",
-      "description": "Aplicacion de carrito de compras desarrollada en React para gestionar productos, cantidades y total de compra de forma dinamica.",
+      "title": "Buscador de Películas",
+      "description": "Aplicación web para buscar películas por título y explorar resultados de forma rápida con una interfaz clara y responsive.",
       "thumbnail": "/projects/project2/thumb.jpg",
       "images": [
         "/projects/project2/img1.jpg",
         "/projects/project2/img2.jpg"
       ],
       "details": {
-        "challenge": "Crear una experiencia de compra simple y funcional donde el usuario pueda agregar y administrar productos facilmente.",
-        "solution": "Desarrolle una interfaz en React con manejo de estado para carrito, calculo automatico de totales y actualizacion inmediata de la vista.",
-        "impact": "Permite simular un flujo de compra real, mejorando la experiencia de usuario con interacciones rapidas y claras."
+        "challenge": "Construir un buscador intuitivo que permita encontrar películas rápidamente sin saturar al usuario con una interfaz compleja.",
+        "solution": "Implementé una SPA en React que consulta datos de películas, renderiza resultados dinámicos y organiza la información en tarjetas visuales.",
+        "impact": "Permite descubrir películas en segundos con una experiencia fluida y adaptable a distintos tamaños de pantalla."
+      },
+      "features": [
+        "Búsqueda por título en tiempo real",
+        "Listado de resultados en tarjetas",
+        "Vista responsive para móvil y desktop",
+        "Interfaz limpia y enfocada en usabilidad",
+        "Consumo de API para obtener información",
+        "Manejo de estados en React"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
+        }
+      ],
+      "links": {
+        "live": "https://app-buscador-peliculas-react-nsj.netlify.app",
+        "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
+      },
+      "tags": ["React", "Buscador", "Películas", "Frontend"],
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "Carrito de Compras",
+      "description": "Aplicación de carrito de compras desarrollada en React para gestionar productos, cantidades y total de compra de forma dinámica.",
+      "thumbnail": "/projects/project3/thumb.jpg",
+      "images": [
+        "/projects/project3/img1.jpg",
+        "/projects/project3/img2.jpg"
+      ],
+      "details": {
+        "challenge": "Crear una experiencia de compra simple y funcional donde el usuario pueda agregar y administrar productos fácilmente.",
+        "solution": "Desarrollé una interfaz en React con manejo de estado para carrito, cálculo automático de totales y actualización inmediata de la vista.",
+        "impact": "Permite simular un flujo de compra real, mejorando la experiencia de usuario con interacciones rápidas y claras."
       },
       "features": [
         "Agregar productos al carrito",
         "Modificar cantidades de productos",
         "Eliminar productos del carrito",
-        "Calculo automatico del total",
-        "Renderizado dinamico de items",
+        "Cálculo automático del total",
+        "Renderizado dinámico de items",
         "Interfaz responsive y amigable"
       ],
       "techStack": [
@@ -93,18 +138,64 @@
       "featured": true
     },
     {
-      "id": "3",
-      "title": "Lista de Tareas",
-      "description": "Aplicación de tareas desarrollada con React y TypeScript para crear, organizar y dar seguimiento a pendientes diarios.",
-      "thumbnail": "/projects/project3/thumb.jpg",
+      "id": "4",
+      "title": "Aplicación de Clima",
+      "description": "Aplicación del clima desarrollada en React para consultar condiciones meteorológicas en tiempo real por ciudad.",
+      "thumbnail": "/projects/project4/thumb.jpg",
       "images": [
-        "/projects/project3/img1.jpg",
-        "/projects/project3/img2.jpg"
+        "/projects/project4/img1.jpg",
+        "/projects/project4/img2.jpg"
       ],
       "details": {
-        "challenge": "Construir una interfaz simple y ordenada para administrar tareas de forma rapida sin perder claridad en el flujo.",
-        "solution": "Desarrolle la aplicacion con componentes en React y tipado estricto en TypeScript para manejar estados, eventos y validaciones del formulario.",
-        "impact": "Mejora la organizacion personal al centralizar pendientes en una sola vista y facilita el seguimiento diario de actividades."
+        "challenge": "Mostrar información del clima de forma clara y rápida para distintas ciudades, evitando una interfaz confusa.",
+        "solution": "Implementé una app en React que consume una API meteorológica y presenta temperatura, estado del clima y datos clave en una vista amigable.",
+        "impact": "Facilita consultas meteorológicas en segundos con una experiencia responsive y enfocada en usabilidad."
+      },
+      "features": [
+        "Búsqueda de clima por ciudad",
+        "Consulta de datos en tiempo real",
+        "Visualización de temperatura y estado",
+        "Manejo de errores de consulta",
+        "Interfaz responsive para móvil y desktop",
+        "Integración con API externa"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
+        }
+      ],
+      "links": {
+        "live": "https://app-clima-react-nsj.netlify.app/",
+        "github": "https://github.com/nicolassarmiento28/app-clima-react"
+      },
+      "tags": ["React", "Clima", "API", "Frontend"],
+      "featured": true
+    },
+    {
+      "id": "5",
+      "title": "Lista de Tareas",
+      "description": "Aplicación de tareas desarrollada con React y TypeScript para crear, organizar y dar seguimiento a pendientes diarios.",
+      "thumbnail": "/projects/project5/thumb.jpg",
+      "images": [
+        "/projects/project5/img1.jpg",
+        "/projects/project5/img2.jpg"
+      ],
+      "details": {
+        "challenge": "Construir una interfaz simple y ordenada para administrar tareas de forma rápida sin perder claridad en el flujo.",
+        "solution": "Desarrollé la aplicación con componentes en React y tipado estricto en TypeScript para manejar estados, eventos y validaciones del formulario.",
+        "impact": "Mejora la organización personal al centralizar pendientes en una sola vista y facilita el seguimiento diario de actividades."
       },
       "features": [
         "Agregar nuevas tareas",
@@ -129,11 +220,6 @@
           "name": "Vite",
           "icon": "vite",
           "color": "#646cff"
-        },
-        {
-          "name": "Ant Design",
-          "icon": "antd",
-          "color": "#0170fe"
         }
       ],
       "links": {
@@ -141,52 +227,6 @@
         "github": "https://github.com/nicolassarmiento28/lista-tareas-react-tsx"
       },
       "tags": ["React", "TypeScript", "TSX", "Task Manager"],
-      "featured": true
-    },
-    {
-      "id": "4",
-      "title": "Aplicación de Clima",
-      "description": "Aplicacion del clima desarrollada en React para consultar condiciones meteorologicas en tiempo real por ciudad.",
-      "thumbnail": "/projects/project4/thumb.jpg",
-      "images": [
-        "/projects/project4/img1.jpg",
-        "/projects/project4/img2.jpg"
-      ],
-      "details": {
-        "challenge": "Mostrar informacion del clima de forma clara y rapida para distintas ciudades, evitando una interfaz confusa.",
-        "solution": "Implemente una app en React que consume una API meteorologica y presenta temperatura, estado del clima y datos clave en una vista amigable.",
-        "impact": "Facilita consultas meteorologicas en segundos con una experiencia responsive y enfocada en usabilidad."
-      },
-      "features": [
-        "Busqueda de clima por ciudad",
-        "Consulta de datos en tiempo real",
-        "Visualizacion de temperatura y estado",
-        "Manejo de errores de consulta",
-        "Interfaz responsive para movil y desktop",
-        "Integracion con API externa"
-      ],
-      "techStack": [
-        {
-          "name": "React",
-          "icon": "react",
-          "color": "#61dafb"
-        },
-        {
-          "name": "Vite",
-          "icon": "vite",
-          "color": "#646cff"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "javascript",
-          "color": "#f7df1e"
-        }
-      ],
-      "links": {
-        "live": "https://app-clima-react-nsj.netlify.app/",
-        "github": "https://github.com/nicolassarmiento28/app-clima-react"
-      },
-      "tags": ["React", "Clima", "API", "Frontend"],
       "featured": true
     }
   ]
