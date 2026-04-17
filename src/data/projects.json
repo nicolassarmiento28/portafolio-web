@@ -40,7 +40,8 @@
         }
       ],
       "links": {
-        "live": "https://vg-collection-eight.vercel.app/"
+        "live": "https://vg-collection-eight.vercel.app/",
+        "github": "https://github.com/nicolassarmiento28/vg-collection"
       },
       "tags": ["React", "Videojuegos", "Colección", "Frontend"],
       "featured": true
