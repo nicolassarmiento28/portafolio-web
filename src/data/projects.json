@@ -2,25 +2,25 @@
   "projects": [
     {
       "id": "1",
-      "title": "Buscador de Películas",
-      "description": "Aplicacion web para buscar peliculas por titulo y explorar resultados de forma rapida con una interfaz clara y responsive.",
+      "title": "Gestor de Colección de Videojuegos",
+      "description": "Aplicación web para gestionar una colección de videojuegos con una interfaz clara, rápida y responsive.",
       "thumbnail": "/projects/project1/thumb.jpg",
       "images": [
         "/projects/project1/img1.jpg",
         "/projects/project1/img2.jpg"
       ],
       "details": {
-        "challenge": "Construir un buscador intuitivo que permita encontrar peliculas rapidamente sin saturar al usuario con una interfaz compleja.",
-        "solution": "Implemente una SPA en React que consulta datos de peliculas, renderiza resultados dinamicos y organiza la informacion en tarjetas visuales.",
-        "impact": "Permite descubrir peliculas en segundos con una experiencia fluida y adaptable a distintos tamanos de pantalla."
+        "challenge": "Organizar una colección de videojuegos en una sola plataforma, permitiendo consultar y administrar registros de forma sencilla.",
+        "solution": "Desarrollé una SPA en React orientada a la gestión de colecciones, con flujo simple para visualizar y administrar videojuegos.",
+        "impact": "Centraliza la colección en una interfaz moderna, mejorando la organización y acceso a la información en cualquier dispositivo."
       },
       "features": [
-        "Busqueda por titulo en tiempo real",
-        "Listado de resultados en tarjetas",
-        "Vista responsive para movil y desktop",
-        "Interfaz limpia y enfocada en usabilidad",
-        "Consumo de API para obtener informacion",
-        "Manejo de estados en React"
+        "Gestión de colección de videojuegos",
+        "Interfaz limpia para navegación rápida",
+        "Vista responsive para móvil y desktop",
+        "Renderizado dinámico de registros",
+        "Manejo de estados en React",
+        "Experiencia optimizada para uso diario"
       ],
       "techStack": [
         {
@@ -40,10 +40,10 @@
         }
       ],
       "links": {
-        "live": "https://app-buscador-peliculas-react-nsj.netlify.app",
+        "live": "https://vg-collection-eight.vercel.app/",
         "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
       },
-      "tags": ["React", "Buscador", "Peliculas", "Frontend"],
+      "tags": ["React", "Videojuegos", "Colección", "Frontend"],
       "featured": true
     },
     {
