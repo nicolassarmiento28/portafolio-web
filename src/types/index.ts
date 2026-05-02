@@ -40,7 +40,6 @@ export interface Skill {
 export interface SkillCategory {
   frontend: Skill[];
   backend: Skill[];
-  learning: Skill[];
 }
 
 export interface PersonalInfo {

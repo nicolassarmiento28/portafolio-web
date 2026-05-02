@@ -37,13 +37,11 @@
       "icon": "nodejs",
       "level": 70,
       "color": "#339933"
-    }
-  ],
-  "learning": [
+    },
     {
-      "name": "MySQL",
+      "name": "SQL",
       "icon": "mysql",
-      "level": 50,
+      "level": 70,
       "color": "#4479a1"
     }
   ]

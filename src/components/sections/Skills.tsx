@@ -7,10 +7,8 @@ import {
   SiJavascript, 
   SiHtml5, 
   SiNodedotjs, 
-  SiMysql,
-  SiFramer
+  SiMysql
 } from 'react-icons/si';
-import { AntDesignOutlined } from '@ant-design/icons';
 import { staggerContainer, fadeInUp, scaleIn } from '../../utils/animations';
 import skillsData from '../../data/skills.json';
 import './Skills.css';
@@ -24,8 +22,6 @@ const Skills = () => {
     html: SiHtml5,
     nodejs: SiNodedotjs,
     mysql: SiMysql,
-    antd: AntDesignOutlined,
-    framer: SiFramer,
   };
 
   const getIcon = (iconName: string) => {
@@ -99,21 +95,6 @@ const Skills = () => {
           </Row>
         </motion.div>
 
-        {/* Learning Skills */}
-        <motion.div
-          className="skills-category"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={staggerContainer}
-        >
-          <motion.h3 className="category-title" variants={fadeInUp}>
-            <span className="gradient-text">Aprendiendo</span>
-          </motion.h3>
-          <Row gutter={[24, 24]} justify="center">
-            {skillsData.learning.map((skill, index) => renderSkillCard(skill, index))}
-          </Row>
-        </motion.div>
       </div>
     </section>
   );

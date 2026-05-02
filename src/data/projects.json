@@ -2,25 +2,25 @@
   "projects": [
     {
       "id": "1",
-      "title": "Gestor de Colección de Videojuegos",
-      "description": "Aplicación web para gestionar una colección de videojuegos con una interfaz clara, rápida y responsive.",
+      "title": "Dashboard Comparativo WWE vs AEW",
+      "description": "Dashboard interactivo para comparar métricas y datos clave entre WWE y AEW con una interfaz clara y visual.",
       "thumbnail": "/projects/project1/thumb.jpg",
       "images": [
         "/projects/project1/img1.jpg",
         "/projects/project1/img2.jpg"
       ],
       "details": {
-        "challenge": "Organizar una colección de videojuegos en una sola plataforma, permitiendo consultar y administrar registros de forma sencilla.",
-        "solution": "Desarrollé una SPA en React orientada a la gestión de colecciones, con flujo simple para visualizar y administrar videojuegos.",
-        "impact": "Centraliza la colección en una interfaz moderna, mejorando la organización y acceso a la información en cualquier dispositivo."
+        "challenge": "Mostrar comparativas deportivas en una sola vista sin perder claridad en la lectura de datos.",
+        "solution": "Desarrollé un dashboard frontend con visualización estructurada para contrastar información de ambas marcas de forma rápida.",
+        "impact": "Facilita el análisis de datos comparativos con una experiencia visual ordenada y responsive."
       },
       "features": [
-        "Gestión de colección de videojuegos",
-        "Interfaz limpia para navegación rápida",
-        "Vista responsive para móvil y desktop",
-        "Renderizado dinámico de registros",
-        "Manejo de estados en React",
-        "Experiencia optimizada para uso diario"
+        "Comparativa de métricas WWE y AEW",
+        "Secciones visuales organizadas",
+        "Interfaz responsive para desktop y móvil",
+        "Navegación clara de datos",
+        "Renderizado dinámico en React",
+        "Experiencia enfocada en análisis"
       ],
       "techStack": [
         {
@@ -40,20 +40,66 @@
         }
       ],
       "links": {
-        "live": "https://vg-collection-eight.vercel.app/",
-        "github": "https://github.com/nicolassarmiento28/vg-collection"
+        "live": "https://dashboard-comparativo-wwe-aew.vercel.app/",
+        "github": "https://github.com/nicolassarmiento28/dashboard-comparativo-wwe-aew"
       },
-      "tags": ["React", "Videojuegos", "Colección", "Frontend"],
+      "tags": ["Dashboard", "React", "Comparativa", "Frontend"],
       "featured": true
     },
     {
       "id": "2",
-      "title": "Buscador de Películas",
-      "description": "Aplicación web para buscar películas por título y explorar resultados de forma rápida con una interfaz clara y responsive.",
+      "title": "E-Commerce",
+      "description": "Aplicación de carrito de compras en React para gestionar productos, cantidades y total de compra de forma dinámica.",
       "thumbnail": "/projects/project2/thumb.jpg",
       "images": [
         "/projects/project2/img1.jpg",
         "/projects/project2/img2.jpg"
+      ],
+      "details": {
+        "challenge": "Crear una experiencia de compra simple y funcional donde el usuario pueda agregar y administrar productos fácilmente.",
+        "solution": "Desarrollé una interfaz en React con manejo de estado para carrito, cálculo automático de totales y actualización inmediata de la vista.",
+        "impact": "Permite simular un flujo de compra real, mejorando la experiencia de usuario con interacciones rápidas y claras."
+      },
+      "features": [
+        "Agregar productos al carrito",
+        "Modificar cantidades de productos",
+        "Eliminar productos del carrito",
+        "Cálculo automático del total",
+        "Renderizado dinámico de items",
+        "Interfaz responsive y amigable"
+      ],
+      "techStack": [
+        {
+          "name": "React",
+          "icon": "react",
+          "color": "#61dafb"
+        },
+        {
+          "name": "Vite",
+          "icon": "vite",
+          "color": "#646cff"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
+        }
+      ],
+      "links": {
+        "live": "https://carrito-compras-react-nsj.netlify.app",
+        "github": "https://github.com/nicolassarmiento28/carritodecompras-react"
+      },
+      "tags": ["React", "Ecommerce", "Carrito", "Frontend"],
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "Buscador de Películas",
+      "description": "Aplicación web para buscar películas por título y explorar resultados de forma rápida con una interfaz clara y responsive.",
+      "thumbnail": "/projects/project3/thumb.jpg",
+      "images": [
+        "/projects/project3/img1.jpg",
+        "/projects/project3/img2.jpg"
       ],
       "details": {
         "challenge": "Construir un buscador intuitivo que permita encontrar películas rápidamente sin saturar al usuario con una interfaz compleja.",
@@ -93,72 +139,26 @@
       "featured": true
     },
     {
-      "id": "3",
-      "title": "Carrito de Compras",
-      "description": "Aplicación de carrito de compras desarrollada en React para gestionar productos, cantidades y total de compra de forma dinámica.",
-      "thumbnail": "/projects/project3/thumb.jpg",
-      "images": [
-        "/projects/project3/img1.jpg",
-        "/projects/project3/img2.jpg"
-      ],
-      "details": {
-        "challenge": "Crear una experiencia de compra simple y funcional donde el usuario pueda agregar y administrar productos fácilmente.",
-        "solution": "Desarrollé una interfaz en React con manejo de estado para carrito, cálculo automático de totales y actualización inmediata de la vista.",
-        "impact": "Permite simular un flujo de compra real, mejorando la experiencia de usuario con interacciones rápidas y claras."
-      },
-      "features": [
-        "Agregar productos al carrito",
-        "Modificar cantidades de productos",
-        "Eliminar productos del carrito",
-        "Cálculo automático del total",
-        "Renderizado dinámico de items",
-        "Interfaz responsive y amigable"
-      ],
-      "techStack": [
-        {
-          "name": "React",
-          "icon": "react",
-          "color": "#61dafb"
-        },
-        {
-          "name": "Vite",
-          "icon": "vite",
-          "color": "#646cff"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "javascript",
-          "color": "#f7df1e"
-        }
-      ],
-      "links": {
-        "live": "https://carrito-compras-react-nsj.netlify.app",
-        "github": "https://github.com/nicolassarmiento28/carritodecompras-react"
-      },
-      "tags": ["React", "Carrito", "Ecommerce", "Frontend"],
-      "featured": true
-    },
-    {
       "id": "4",
-      "title": "Aplicación de Clima",
-      "description": "Aplicación del clima desarrollada en React para consultar condiciones meteorológicas en tiempo real por ciudad.",
+      "title": "Gestor de Colección de Videojuegos",
+      "description": "Aplicación web para gestionar una colección de videojuegos con una interfaz clara, rápida y responsive.",
       "thumbnail": "/projects/project4/thumb.jpg",
       "images": [
         "/projects/project4/img1.jpg",
         "/projects/project4/img2.jpg"
       ],
       "details": {
-        "challenge": "Mostrar información del clima de forma clara y rápida para distintas ciudades, evitando una interfaz confusa.",
-        "solution": "Implementé una app en React que consume una API meteorológica y presenta temperatura, estado del clima y datos clave en una vista amigable.",
-        "impact": "Facilita consultas meteorológicas en segundos con una experiencia responsive y enfocada en usabilidad."
+        "challenge": "Organizar una colección de videojuegos en una sola plataforma, permitiendo consultar y administrar registros de forma sencilla.",
+        "solution": "Desarrollé una SPA en React orientada a la gestión de colecciones, con flujo simple para visualizar y administrar videojuegos.",
+        "impact": "Centraliza la colección en una interfaz moderna, mejorando la organización y acceso a la información en cualquier dispositivo."
       },
       "features": [
-        "Búsqueda de clima por ciudad",
-        "Consulta de datos en tiempo real",
-        "Visualización de temperatura y estado",
-        "Manejo de errores de consulta",
-        "Interfaz responsive para móvil y desktop",
-        "Integración con API externa"
+        "Gestión de colección de videojuegos",
+        "Interfaz limpia para navegación rápida",
+        "Vista responsive para móvil y desktop",
+        "Renderizado dinámico de registros",
+        "Manejo de estados en React",
+        "Experiencia optimizada para uso diario"
       ],
       "techStack": [
         {
@@ -178,10 +178,10 @@
         }
       ],
       "links": {
-        "live": "https://app-clima-react-nsj.netlify.app/",
-        "github": "https://github.com/nicolassarmiento28/app-clima-react"
+        "live": "https://vg-collection-eight.vercel.app/",
+        "github": "https://github.com/nicolassarmiento28/vg-collection"
       },
-      "tags": ["React", "Clima", "API", "Frontend"],
+      "tags": ["React", "Videojuegos", "Colección", "Frontend"],
       "featured": true
     },
     {
@@ -228,6 +228,52 @@
         "github": "https://github.com/nicolassarmiento28/lista-tareas-react-tsx"
       },
       "tags": ["React", "TypeScript", "TSX", "Task Manager"],
+      "featured": true
+    },
+    {
+      "id": "6",
+      "title": "Space Runner",
+      "description": "Juego web con temática espacial enfocado en velocidad, reflejos y experiencia interactiva desde el navegador.",
+      "thumbnail": "/projects/project6/thumb.jpg",
+      "images": [
+        "/projects/project6/img1.jpg",
+        "/projects/project6/img2.jpg"
+      ],
+      "details": {
+        "challenge": "Crear una experiencia de juego fluida y entretenida en web manteniendo buen rendimiento en distintos dispositivos.",
+        "solution": "Desarrollé un proyecto frontend con lógica interactiva y estructura visual enfocada en dinámica arcade y jugabilidad rápida.",
+        "impact": "Entrega una experiencia lúdica accesible desde navegador con buena respuesta y diseño atractivo."
+      },
+      "features": [
+        "Gameplay dinámico tipo runner",
+        "Interfaz visual con temática espacial",
+        "Control simple y respuesta rápida",
+        "Ejecución directa en navegador",
+        "Diseño responsive",
+        "Experiencia arcade ligera"
+      ],
+      "techStack": [
+        {
+          "name": "JavaScript",
+          "icon": "javascript",
+          "color": "#f7df1e"
+        },
+        {
+          "name": "HTML5",
+          "icon": "html",
+          "color": "#e34f26"
+        },
+        {
+          "name": "CSS3",
+          "icon": "html",
+          "color": "#264de4"
+        }
+      ],
+      "links": {
+        "live": "https://space-runner-theta.vercel.app/",
+        "github": "https://github.com/nicolassarmiento28/space-runner"
+      },
+      "tags": ["Game", "Runner", "JavaScript", "Frontend"],
       "featured": true
     }
   ]
