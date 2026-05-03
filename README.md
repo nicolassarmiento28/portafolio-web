@@ -1,6 +1,8 @@
 # Portafolio Web — Nicolas Sarmiento
 
-Portafolio personal con estilo **Cyber Neon**, construido con React 19, TypeScript, Vite, Ant Design y Framer Motion. Incluye modo oscuro/claro, animaciones fluidas, modal de proyectos y formulario de contacto con EmailJS.
+Portafolio web desarrollado con React y Vite para presentar proyectos frontend y fullstack mediante una interfaz moderna, responsive y enfocada en experiencia de usuario. La aplicación incluye visualización dinámica de proyectos, navegación optimizada y acceso directo a demos y repositorios de GitHub.
+
+Implementé una arquitectura SPA con componentes reutilizables, diseño responsive y renderizado dinámico para organizar y destacar aplicaciones desarrolladas con tecnologías como React, TypeScript.
 
 - **Demo en vivo:** https://portafolio-webnsj.vercel.app/
 - **Repositorio:** https://github.com/nicolassarmiento28/portafolio-web
