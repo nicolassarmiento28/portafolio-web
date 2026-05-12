@@ -118,7 +118,7 @@ const Contact = () => {
                   type="primary"
                   size="large"
                   className="cta-button"
-                  href="/cv/CV_Nicolas_Sarmiento_ES_FULL.pdf"
+                  href="/cv/CV_Nicolas_Sarmiento_2026_Final.pdf"
                   download
                 >
                   Descargar CV

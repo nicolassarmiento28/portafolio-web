@@ -1,4 +1,3 @@
-import { HeartFilled } from '@ant-design/icons';
 import SocialLinks from '../common/SocialLinks';
 import personalData from '../../data/personal.json';
 import './Footer.css';
@@ -49,7 +48,7 @@ const Footer = () => {
             © {currentYear} {personalData.fullName}. Todos los derechos reservados.
           </p>
           <p className="footer-made-with">
-            Hecho con <HeartFilled className="heart-icon" /> usando React, TypeScript & Vite
+            Hecho con React, TypeScript & Vite
           </p>
         </div>
       </div>
