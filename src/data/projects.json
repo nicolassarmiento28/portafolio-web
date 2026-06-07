@@ -68,34 +68,36 @@
 
   "featured": true
 },
-   {
+    {
   "id": "2",
-  "title": "Aplicación Web de E-Commerce",
-  "description": "Aplicación web de e-commerce desarrollada con React para gestionar productos y simular un flujo de compra dinámico mediante una interfaz moderna y responsive.",
+  "title": "Petshop-E-commerce",
+  "description": "E-commerce de mascotas tipo SPA con catálogo de productos, carrito de compras, pago integrado con Transbank Webpay Plus y Panel de administración incluido.",
 
   "thumbnail": "/projects/project2/thumb.jpg",
 
   "images": [
     "/projects/project2/img1.jpg",
-    "/projects/project2/img2.jpg"
+    "/projects/project2/img2.jpg",
+    "/projects/project2/img3.jpg",
+    "/projects/project2/img4.jpg"
   ],
 
   "details": {
-    "challenge": "Diseñar una experiencia de compra intuitiva que permitiera gestionar productos y cantidades de forma dinámica sin afectar la fluidez de la interfaz.",
+    "challenge": "Desarrollar un e-commerce completo para mascotas que integre catálogo de productos, carrito de compras, pasarela de pago real y un panel de administración en una sola aplicación.",
 
-    "solution": "Desarrollé una aplicación frontend con React utilizando manejo de estado para la administración del carrito, actualización dinámica de productos y cálculo automático de totales en tiempo real.",
+    "solution": "Implementé una SPA fullstack con React para el frontend y Node.js con Express para el backend, integrando Transbank Webpay Plus como pasarela de pago real, un panel de administración protegido con autenticación JWT, y una base de datos PostgreSQL para la gestión de productos, usuarios y pedidos.",
 
-    "impact": "Permite simular un flujo de compra interactivo mediante renderizado dinámico y una experiencia de usuario rápida, clara y responsive."
+    "impact": "Ofrece una solución completa de comercio electrónico para mascotas con pagos reales integrados, panel administrativo funcional y una experiencia de compra fluida y responsive."
   },
 
   "features": [
-    "Agregar productos al carrito de compras",
-    "Modificar cantidades de productos dinámicamente",
-    "Eliminar productos del carrito",
-    "Cálculo automático del total de compra",
-    "Renderizado dinámico de productos con React",
-    "Interfaz responsive para desktop y dispositivos móviles",
-    "Gestión de estado para actualización inmediata de la interfaz"
+    "Catálogo dinámico de productos para mascotas con filtros y búsqueda",
+    "Carrito de compras con gestión de cantidades y cálculo en tiempo real",
+    "Pago integrado con Transbank Webpay Plus",
+    "Panel de administración con autenticación JWT",
+    "Gestión de productos, categorías, usuarios y pedidos desde el panel",
+    "Arquitectura SPA con renderizado dinámico y navegación fluida",
+    "Interfaz responsive optimizada para desktop y dispositivos móviles"
   ],
 
   "techStack": [
@@ -105,9 +107,14 @@
       "color": "#61dafb"
     },
     {
-      "name": "Vite",
-      "icon": "vite",
-      "color": "#646cff"
+      "name": "Node.js",
+      "icon": "nodejs",
+      "color": "#68a063"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql",
+      "color": "#336791"
     },
     {
       "name": "JavaScript",
@@ -117,15 +124,18 @@
   ],
 
   "links": {
-    "live": "https://carrito-compras-react-nsj.netlify.app",
-    "github": "https://github.com/nicolassarmiento28/carritodecompras-react"
+    "live": "",
+    "github": "https://github.com/nicolassarmiento28/Petshop-E-commerce"
   },
 
   "tags": [
     "React",
+    "Node.js",
     "E-Commerce",
-    "Frontend",
-    "State Management"
+    "Fullstack",
+    "SPA",
+    "PostgreSQL",
+    "Webpay"
   ],
 
   "featured": true
