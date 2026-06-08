@@ -252,3 +252,16 @@ Edit `src/styles/global.css` CSS custom properties:
 ---
 
 **Note:** This project prioritizes visual design, animations, and user experience. Maintain the Cyber Neon aesthetic when making changes.
+
+## Session Context - Últimos Cambios
+
+### Junio 2026 - Proyecto 2: PetShop SPA + Webpay
+- **Reemplazado** el proyecto 2 (antes "Aplicación Web de E-Commerce") por **"PetShop SPA + Webpay"**
+- **Descripción:** E-commerce de mascotas tipo SPA con catálogo de productos, carrito de compras, pago integrado con Transbank Webpay Plus y Panel de administración incluido.
+- **Tecnologías:** React, Node.js, PostgreSQL, JavaScript
+- **Repo:** https://github.com/nicolassarmiento28/Petshop-E-commerce
+- **Demo:** https://petshop-e-commerce.vercel.app/
+- **Imágenes:** 5 imágenes copiadas a `public/projects/project2/` (thumb.jpg, img1.jpg - img4.jpg)
+
+### Notas
+- Los escáneres de código de barras funcionan como teclado externo: envían el código como keypresses + Enter. Se puede integrar en el panel de admin con un listener de teclado.
