@@ -1,5 +1,5 @@
 import { Modal, Tag, Button, Carousel } from 'antd';
-import { GithubOutlined, LinkOutlined, CloseOutlined } from '@ant-design/icons';
+import { GithubOutlined, LinkOutlined, CloseOutlined, LeftOutlined, RightOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import type { Project } from '../../types';
 import './ProjectModal.css';
@@ -71,7 +71,7 @@ const ProjectModal = ({ project, visible, onClose }: ProjectModalProps) => {
 
         {/* Image Gallery */}
         <div className="modal-gallery">
-          <Carousel autoplay dots={{ className: 'carousel-dots' }}>
+          <Carousel autoplay arrows prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />} dots={{ className: 'carousel-dots' }}>
             {project.images.map((image, index) => (
               <div key={index} className="carousel-item">
                 <img
