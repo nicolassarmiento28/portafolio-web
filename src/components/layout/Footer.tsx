@@ -47,9 +47,7 @@ const Footer = () => {
           <p className="footer-copyright">
             © {currentYear} {personalData.fullName}. Todos los derechos reservados.
           </p>
-          <p className="footer-made-with">
-            Hecho con React, TypeScript & Vite
-          </p>
+
         </div>
       </div>
     </footer>

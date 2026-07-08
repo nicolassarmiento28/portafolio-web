@@ -83,7 +83,7 @@ const About = () => {
                 >
                   <h4 className="highlight-title gradient-text">Enfoque</h4>
                   <p className="highlight-text">
-                    Crear soluciones escalables y eficientes con código limpio y mejores prácticas
+                    Desarrollar aplicaciones web modernas, escalables y de alta calidad mediante código limpio, buenas prácticas de ingeniería y tecnologías actuales.
                   </p>
                 </motion.div>
 
@@ -93,7 +93,7 @@ const About = () => {
                 >
                   <h4 className="highlight-title gradient-text">Objetivo</h4>
                   <p className="highlight-text">
-                    Desarrollar aplicaciones que generen impacto real y experiencias excepcionales
+                    Crear soluciones tecnológicas que resuelvan problemas reales, aportando valor mediante desarrollo Full Stack, arquitectura de software e innovación continua.
                   </p>
                 </motion.div>
 
@@ -103,7 +103,7 @@ const About = () => {
                 >
                   <h4 className="highlight-title gradient-text">Aprendizaje</h4>
                   <p className="highlight-text">
-                    Siempre explorando nuevas tecnologías y manteniéndome actualizado con la industria
+                    Comprometido con el aprendizaje continuo, explorando nuevas tecnologías, desarrollo Full Stack, inteligencia artificial, LLMs y herramientas modernas para mantenerme actualizado con las tendencias de la industria.
                   </p>
                 </motion.div>
               </div>

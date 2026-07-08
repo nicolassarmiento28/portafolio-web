@@ -1,7 +1,89 @@
 {
   "projects": [
-   {
+    {
   "id": "1",
+  "title": "SaasChatbot IA",
+  "description": "Plataforma SaaS para Creación de Chatbots Inteligentes. Aplicación SaaS desarrollada siguiendo la metodología Spec Driven Development, diseñada para que empresas puedan crear e implementar chatbots de atención al cliente impulsados por inteligencia artificial en cuestión de minutos. La plataforma incorpora autenticación segura, gestión de usuarios, comunicación en tiempo real e integración con modelos de lenguaje para ofrecer conversaciones naturales y escalables.",
+
+  "thumbnail": "/projects/project7/thumb.jpg",
+
+  "images": [
+    "/projects/project7/img1.jpg",
+    "/projects/project7/img2.jpg",
+    "/projects/project7/img3.jpg"
+  ],
+
+  "details": {
+    "challenge": "Desarrollar una plataforma SaaS completa que permita a empresas crear e implementar chatbots de atención al cliente impulsados por IA de forma rápida y escalable, integrando autenticación segura, base de datos en tiempo real y modelos de lenguaje.",
+
+    "solution": "Implementé una arquitectura moderna basada en componentes reutilizables y experiencia de usuario responsive, integrando Supabase para autenticación, políticas de seguridad (RLS), base de datos en tiempo real y Edge Functions para la lógica del servidor. Además, el proyecto utiliza la Groq API para generar respuestas mediante modelos de lenguaje (LLMs), proporcionando una solución orientada a automatización, soporte al cliente y aplicaciones empresariales basadas en IA.",
+
+    "impact": "Ofrece una plataforma funcional y escalable que permite a empresas implementar chatbots con IA conversacional en minutos, automatizando la atención al cliente con respuestas naturales y seguras."
+  },
+
+  "features": [
+    "Autenticación segura con Supabase y políticas RLS",
+    "Base de datos en tiempo real para gestión de conversaciones",
+    "Edge Functions para lógica del servidor sin servidor propio",
+    "Integración con Groq API para respuestas con LLMs",
+    "Gestión de usuarios y roles con permisos granulares",
+    "Comunicación en tiempo real para atención al cliente",
+    "Interfaz responsive con Ant Design y React",
+    "Arquitectura SaaS escalable y modular"
+  ],
+
+  "techStack": [
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "#61dafb"
+    },
+    {
+      "name": "Vite",
+      "icon": "vite",
+      "color": "#646cff"
+    },
+    {
+      "name": "Supabase",
+      "icon": "supabase",
+      "color": "#3ecf8e"
+    },
+    {
+      "name": "Groq API",
+      "icon": "groq",
+      "color": "#f97316"
+    },
+    {
+      "name": "Ant Design",
+      "icon": "antdesign",
+      "color": "#1677ff"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "color": "#3178c6"
+    }
+  ],
+
+  "links": {
+    "live": "https://saaschatbotia.vercel.app/",
+    "github": "https://github.com/nicolassarmiento28/SaasChatbot"
+  },
+
+  "tags": [
+    "SaaS",
+    "Chatbot",
+    "IA",
+    "React",
+    "Supabase",
+    "LLM",
+    "Fullstack"
+  ],
+
+  "featured": true
+},
+   {
+  "id": "2",
   "title": "Dashboard Analítico de Wrestling",
   "description": "Dashboard interactivo desarrollado para comparar métricas y visualización de datos entre WWE y AEW mediante una interfaz moderna y responsive.",
 
@@ -69,7 +151,7 @@
   "featured": true
 },
     {
-  "id": "2",
+  "id": "3",
   "title": "PetShop SPA + Webpay",
   "description": "E-commerce de mascotas tipo SPA con catálogo de productos, carrito de compras, pago integrado con Transbank Webpay Plus y Panel de administración incluido.",
 
@@ -141,70 +223,8 @@
   "featured": true
 },
     {
-  "id": "3",
-  "title": "Aplicación de Búsqueda de Películas",
-  "description": "Aplicación web desarrollada con React para buscar y explorar películas mediante consumo de API, ofreciendo una experiencia rápida, dinámica y responsive.",
-
-  "thumbnail": "/projects/project3/thumb.jpg",
-
-  "images": [
-    "/projects/project3/img2.jpg",
-    "/projects/project3/img3.jpg"
-  ],
-
-  "details": {
-    "challenge": "Desarrollar un buscador de películas intuitivo y eficiente que permitiera consultar información en tiempo real sin afectar la experiencia de usuario.",
-
-    "solution": "Implementé una Single Page Application (SPA) con React utilizando consumo de APIs, manejo de estado y renderizado dinámico para mostrar resultados organizados en una interfaz clara y responsive.",
-
-    "impact": "Facilita la búsqueda y exploración de películas mediante una experiencia fluida, optimizada y adaptable a distintos dispositivos."
-  },
-
-  "features": [
-    "Búsqueda de películas en tiempo real",
-    "Consumo de API para obtención de datos dinámicos",
-    "Renderizado dinámico de resultados con React",
-    "Listado visual de películas mediante tarjetas",
-    "Interfaz responsive para desktop y dispositivos móviles",
-    "Manejo de estado para actualización inmediata de resultados",
-    "Diseño enfocado en experiencia de usuario y usabilidad"
-  ],
-
-  "techStack": [
-    {
-      "name": "React",
-      "icon": "react",
-      "color": "#61dafb"
-    },
-    {
-      "name": "Vite",
-      "icon": "vite",
-      "color": "#646cff"
-    },
-    {
-      "name": "JavaScript",
-      "icon": "javascript",
-      "color": "#f7df1e"
-    }
-  ],
-
-  "links": {
-    "live": "https://app-buscador-peliculas-react-nsj.netlify.app",
-    "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
-  },
-
-  "tags": [
-    "React",
-    "API Integration",
-    "Frontend",
-    "SPA"
-  ],
-
-  "featured": true
-},
-    {
   "id": "4",
-  "title": "Gestor de Colección de Videojuegos",
+  "title": "VG Collection",
   "description": "Aplicación web desarrollada con React para gestionar y visualizar una colección de videojuegos mediante una interfaz moderna, dinámica y responsive.",
 
   "thumbnail": "/projects/project4/thumb.jpg",
@@ -266,32 +286,32 @@
 },
     {
   "id": "5",
-  "title": "Aplicación de Gestión de Tareas",
-  "description": "Aplicación de gestión de tareas desarrollada con React y TypeScript para organizar, administrar y dar seguimiento a actividades mediante una interfaz moderna y responsive.",
+  "title": "Aplicación de Búsqueda de Películas",
+  "description": "Aplicación web desarrollada con React para buscar y explorar películas mediante consumo de API, ofreciendo una experiencia rápida, dinámica y responsive.",
 
-  "thumbnail": "/projects/project5/thumb.jpg",
+  "thumbnail": "/projects/project3/thumb.jpg",
 
   "images": [
-    "/projects/project5/img1.jpg",
-    "/projects/project5/img2.jpg"
+    "/projects/project3/img2.jpg",
+    "/projects/project3/img3.jpg"
   ],
 
   "details": {
-    "challenge": "Diseñar una interfaz simple y eficiente para administrar tareas diarias manteniendo una experiencia de usuario clara, rápida y organizada.",
+    "challenge": "Desarrollar un buscador de películas intuitivo y eficiente que permitiera consultar información en tiempo real sin afectar la experiencia de usuario.",
 
-    "solution": "Desarrollé una aplicación frontend utilizando React y TypeScript, implementando manejo de estado, componentes reutilizables, validaciones y tipado estricto para mejorar la mantenibilidad y escalabilidad del proyecto.",
+    "solution": "Implementé una Single Page Application (SPA) con React utilizando consumo de APIs, manejo de estado y renderizado dinámico para mostrar resultados organizados en una interfaz clara y responsive.",
 
-    "impact": "Facilita la organización y seguimiento de tareas mediante una experiencia fluida, renderizado dinámico y una interfaz adaptable a distintos dispositivos."
+    "impact": "Facilita la búsqueda y exploración de películas mediante una experiencia fluida, optimizada y adaptable a distintos dispositivos."
   },
 
   "features": [
-    "Creación y gestión de tareas dinámicamente",
-    "Marcado de tareas completadas",
-    "Eliminación de tareas en tiempo real",
-    "Manejo de estado con React",
-    "Tipado seguro y validaciones con TypeScript",
-    "Componentes reutilizables y estructura escalable",
-    "Interfaz responsive para desktop y dispositivos móviles"
+    "Búsqueda de películas en tiempo real",
+    "Consumo de API para obtención de datos dinámicos",
+    "Renderizado dinámico de resultados con React",
+    "Listado visual de películas mediante tarjetas",
+    "Interfaz responsive para desktop y dispositivos móviles",
+    "Manejo de estado para actualización inmediata de resultados",
+    "Diseño enfocado en experiencia de usuario y usabilidad"
   ],
 
   "techStack": [
@@ -301,91 +321,27 @@
       "color": "#61dafb"
     },
     {
-      "name": "TypeScript",
-      "icon": "typescript",
-      "color": "#3178c6"
-    },
-    {
       "name": "Vite",
       "icon": "vite",
       "color": "#646cff"
-    }
-  ],
-
-  "links": {
-    "live": "https://lista-tareas-react-tsx-ns.netlify.app",
-    "github": "https://github.com/nicolassarmiento28/lista-tareas-react-tsx"
-  },
-
-  "tags": [
-    "React",
-    "TypeScript",
-    "Frontend",
-    "Task Management"
-  ],
-
-  "featured": true
-},
-   {
-  "id": "6",
-  "title": "Space Runner",
-  "description": "Juego web desarrollado con JavaScript y HTML5 enfocado en jugabilidad dinámica, interacción en tiempo real y experiencia arcade desde el navegador.",
-
-  "thumbnail": "/projects/project6/thumb.jpg",
-
-  "images": [
-    "/projects/project6/img1.jpg",
-    "/projects/project6/img2.jpg",
-    "/projects/project6/img3.jpg",
-    "/projects/project6/img4.jpg"
-  ],
-
-  "details": {
-    "challenge": "Desarrollar una experiencia de juego fluida y entretenida en navegador manteniendo buen rendimiento, respuesta rápida y una interfaz visual atractiva.",
-
-    "solution": "Implementé un juego frontend utilizando JavaScript, HTML5 y CSS3, desarrollando lógica interactiva, control de eventos y renderizado dinámico enfocado en mecánicas arcade y experiencia de usuario.",
-
-    "impact": "Ofrece una experiencia interactiva accesible desde navegador mediante gameplay dinámico, respuesta rápida y una interfaz optimizada para distintos dispositivos."
-  },
-
-  "features": [
-    "Gameplay dinámico estilo endless runner",
-    "Lógica interactiva desarrollada con JavaScript",
-    "Renderizado dinámico en navegador",
-    "Sistema de control y respuesta en tiempo real",
-    "Interfaz visual con temática espacial",
-    "Diseño responsive para distintos dispositivos",
-    "Experiencia arcade ligera y optimizada"
-  ],
-
-  "techStack": [
+    },
     {
       "name": "JavaScript",
       "icon": "javascript",
       "color": "#f7df1e"
-    },
-    {
-      "name": "HTML5",
-      "icon": "html",
-      "color": "#e34f26"
-    },
-    {
-      "name": "CSS3",
-      "icon": "css",
-      "color": "#264de4"
     }
   ],
 
   "links": {
-    "live": "https://space-runner-theta.vercel.app/",
-    "github": "https://github.com/nicolassarmiento28/space-runner"
+    "live": "https://app-buscador-peliculas-react-nsj.netlify.app",
+    "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
   },
 
   "tags": [
-    "JavaScript",
-    "Game Development",
+    "React",
+    "API Integration",
     "Frontend",
-    "Interactive Experience"
+    "SPA"
   ],
 
   "featured": true
