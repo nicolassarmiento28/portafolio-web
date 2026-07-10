@@ -131,6 +131,11 @@
   color: var(--text-primary);
 }
 
+[data-theme='light'] .cta-download {
+  border-color: var(--accent-tertiary);
+  background: var(--bg-secondary);
+}
+
 .cta-download:hover {
   border-color: var(--accent-tertiary);
   color: var(--accent-tertiary);
@@ -168,6 +173,13 @@
   .hero-ctas {
     flex-direction: column;
     width: 100%;
+  }
+
+  /* The floating scroll indicator overlaps the stacked CTA buttons on short
+     mobile viewports (content taller than 100vh). Hide it there; it's purely
+     decorative and desktop already communicates scrollability via layout. */
+  .scroll-indicator {
+    display: none;
   }
 
   .cta-primary,

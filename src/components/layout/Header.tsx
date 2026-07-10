@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Menu, Drawer, Button } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
+import { MenuOutlined, DownloadOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 import ThemeToggle from '../common/ThemeToggle';
+import SocialLinks from '../common/SocialLinks';
 import personalData from '../../data/personal.json';
 import './Header.css';
 
@@ -106,6 +107,24 @@ const Header = () => {
             onClick={handleMenuSelect}
             items={menuItems}
           />
+          <div className="mobile-drawer-footer">
+            <Button
+              type="primary"
+              className="mobile-drawer-cta"
+              onClick={() => handleMenuClick('contact')}
+            >
+              Contactar
+            </Button>
+            <Button
+              className="mobile-drawer-cv"
+              icon={<DownloadOutlined />}
+              href="/cv/CV_Nicolas_Sarmiento_2026.pdf"
+              download
+            >
+              Descargar CV
+            </Button>
+            <SocialLinks size="medium" />
+          </div>
         </Drawer>
       </div>
     </motion.header>

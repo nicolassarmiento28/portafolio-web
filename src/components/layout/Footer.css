@@ -127,6 +127,12 @@
     gap: 24px;
   }
 
+  /* Navigation is already reachable via the header menu; drop the
+     duplicate list on mobile to shorten the final scroll. */
+  .footer-nav-section {
+    display: none;
+  }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
