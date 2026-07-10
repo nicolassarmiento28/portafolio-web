@@ -345,6 +345,77 @@
   ],
 
   "featured": true
+},
+    {
+  "id": "6",
+  "title": "Space Runner",
+  "description": "Juego web interactivo desarrollado con JavaScript, HTML5 y CSS3 enfocado en lógica de juego, renderizado dinámico y experiencia arcade en navegador, con mecánicas interactivas y control de eventos en tiempo real.",
+
+  "thumbnail": "/projects/project6/thumb.jpg",
+
+  "images": [
+    "/projects/project6/img1.jpg",
+    "/projects/project6/img2.jpg",
+    "/projects/project6/img3.jpg",
+    "/projects/project6/img4.jpg"
+  ],
+
+  "details": {
+    "challenge": "Desarrollar un juego arcade completo para navegador, sin librerías externas, con controles adaptados tanto a PC (teclado) como a dispositivos táctiles, música y efectos de sonido generados en tiempo real, y persistencia del puntaje más alto.",
+
+    "solution": "Implementé el juego completo sobre HTML5 Canvas con JavaScript ES6+ puro, utilizando Web Audio API para generar música y efectos de sonido de forma procedural, detección de swipe para controles táctiles, sistema de power-ups (vidas, escudos, multishot temporal) y guardado del récord de puntuación mediante localStorage.",
+
+    "impact": "Ofrece una experiencia arcade fluida y funcional tanto en PC como en dispositivos móviles, sin dependencias externas ni necesidad de instalación, demostrando dominio de renderizado en Canvas, manejo de eventos en tiempo real y audio procedural."
+  },
+
+  "features": [
+    "Renderizado del juego completo sobre HTML5 Canvas",
+    "Música y efectos de sonido procedurales con Web Audio API",
+    "Controles de teclado (PC) y swipe/tap táctil (móvil y tablet)",
+    "Sistema de power-ups: vidas extra, escudos y multishot temporal",
+    "Efectos de partículas al destruir enemigos",
+    "Puntuación con récord guardado en localStorage",
+    "Fondo espacial animado con estrellas, planetas y asteroides",
+    "Adaptable automáticamente a distintos tamaños de pantalla"
+  ],
+
+  "techStack": [
+    {
+      "name": "HTML5 Canvas",
+      "icon": "html5",
+      "color": "#e34f26"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "color": "#f7df1e"
+    },
+    {
+      "name": "Web Audio API",
+      "icon": "javascript",
+      "color": "#f7df1e"
+    },
+    {
+      "name": "CSS3",
+      "icon": "css3",
+      "color": "#1572b6"
+    }
+  ],
+
+  "links": {
+    "live": "https://space-runner-theta.vercel.app/",
+    "github": "https://github.com/nicolassarmiento28/space-runner"
+  },
+
+  "tags": [
+    "Juego",
+    "JavaScript",
+    "Canvas",
+    "Web Audio API",
+    "Frontend"
+  ],
+
+  "featured": true
 }
   ]
 }
