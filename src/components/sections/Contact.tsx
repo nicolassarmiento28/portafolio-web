@@ -14,6 +14,7 @@ interface ContactFormData {
   name: string;
   email: string;
   message: string;
+  website?: string; // honeypot field, must stay empty (bots fill every input)
 }
 
 const Contact = () => {
@@ -21,6 +22,11 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const onFinish = async (values: ContactFormData) => {
+    // ponytail: honeypot bot filter; captcha not needed at this traffic level
+    if (values.website) {
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -142,6 +148,14 @@ const Contact = () => {
                 className="contact-form"
               >
                 <Form.Item
+                  name="website"
+                  style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }}
+                  aria-hidden="true"
+                >
+                  <Input tabIndex={-1} autoComplete="off" />
+                </Form.Item>
+
+                <Form.Item
                   name="name"
                   rules={[{ required: true, message: 'Por favor ingresa tu nombre' }]}
                 >
@@ -150,6 +164,7 @@ const Contact = () => {
                     placeholder="Tu nombre"
                     size="large"
                     className="form-input"
+                    maxLength={100}
                   />
                 </Form.Item>
 
@@ -165,6 +180,7 @@ const Contact = () => {
                     placeholder="tu@email.com"
                     size="large"
                     className="form-input"
+                    maxLength={150}
                   />
                 </Form.Item>
 
@@ -179,6 +195,8 @@ const Contact = () => {
                     placeholder="Cuentame sobre tu proyecto..."
                     rows={6}
                     className="form-textarea"
+                    maxLength={2000}
+                    showCount
                   />
                 </Form.Item>
 
