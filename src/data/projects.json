@@ -286,8 +286,8 @@
 },
     {
   "id": "5",
-  "title": "Aplicación de Búsqueda de Películas",
-  "description": "Aplicación web desarrollada con React para buscar y explorar películas mediante consumo de API, ofreciendo una experiencia rápida, dinámica y responsive.",
+  "title": "Buscador de Películas",
+  "description": "Aplicación web desarrollada con React que permite explorar el catálogo de TMDb, buscar películas en tiempo real, filtrarlas por categoría y guardar favoritos con autenticación de Google.",
 
   "thumbnail": "/projects/project3/thumb.jpg",
 
@@ -297,21 +297,22 @@
   ],
 
   "details": {
-    "challenge": "Desarrollar un buscador de películas intuitivo y eficiente que permitiera consultar información en tiempo real sin afectar la experiencia de usuario.",
+    "challenge": "Desarrollar un buscador de películas intuitivo y eficiente que permitiera consultar información en tiempo real desde una API externa, con filtros, ordenamiento y persistencia de favoritos por usuario.",
 
-    "solution": "Implementé una Single Page Application (SPA) con React utilizando consumo de APIs, manejo de estado y renderizado dinámico para mostrar resultados organizados en una interfaz clara y responsive.",
+    "solution": "Implementé una Single Page Application (SPA) con React consumiendo la API de TMDb, con manejo de estado para búsqueda y filtros, autenticación con Google para gestionar una lista de favoritos personal, y soporte de tema claro/oscuro.",
 
-    "impact": "Facilita la búsqueda y exploración de películas mediante una experiencia fluida, optimizada y adaptable a distintos dispositivos."
+    "impact": "Facilita la búsqueda y exploración de películas mediante una experiencia fluida, personalizable y adaptable a distintos dispositivos."
   },
 
   "features": [
-    "Búsqueda de películas en tiempo real",
-    "Consumo de API para obtención de datos dinámicos",
-    "Renderizado dinámico de resultados con React",
-    "Listado visual de películas mediante tarjetas",
-    "Interfaz responsive para desktop y dispositivos móviles",
-    "Manejo de estado para actualización inmediata de resultados",
-    "Diseño enfocado en experiencia de usuario y usabilidad"
+    "Búsqueda de películas en tiempo real contra la API de TMDb",
+    "Filtrado por categoría (Acción, Comedia, Terror, Drama, Romance, Ciencia ficción, Animación, Suspenso)",
+    "Ordenamiento por popularidad, mejor valoradas o más recientes",
+    "Autenticación con Google e inicio de sesión de usuario",
+    "Lista de favoritos ('Mi lista') persistente por usuario",
+    "Selector de tema claro/oscuro",
+    "Listado visual de películas mediante tarjetas con calificación",
+    "Interfaz responsive para desktop y dispositivos móviles"
   ],
 
   "techStack": [
@@ -333,13 +334,14 @@
   ],
 
   "links": {
-    "live": "https://app-buscador-peliculas-react-nsj.netlify.app",
+    "live": "https://buscador-peliculas-react-ten.vercel.app/",
     "github": "https://github.com/nicolassarmiento28/buscador-peliculas-react"
   },
 
   "tags": [
     "React",
     "API Integration",
+    "Authentication",
     "Frontend",
     "SPA"
   ],
