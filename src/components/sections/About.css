@@ -40,8 +40,8 @@
 /* Same visual language as the Skills cards: a thin brand-gradient border
    (padding + gradient background) instead of stacked color layers. */
 .about-image-border {
-  height: 520px;
-  max-height: 520px;
+  height: 508px; /* ponytail: 12px less than text block's rendered height (subtitle+paragraph), tune ±4px if it drifts */
+  max-height: 508px;
   padding: 3px;
   border-radius: 22px;
   background: var(--gradient-primary);
