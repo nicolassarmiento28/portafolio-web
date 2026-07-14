@@ -9,10 +9,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <div className="footer-brand">
+          <a href="#home" className="footer-brand" aria-label="Volver al inicio">
             <span className="footer-initials gradient-text">{personalData.initials}</span>
             <p className="footer-tagline">{personalData.title}</p>
-          </div>
+          </a>
 
           <div className="footer-links">
             <div className="footer-section footer-nav-section">
@@ -48,6 +48,12 @@ const Footer = () => {
             © {currentYear} {personalData.fullName}. Todos los derechos reservados.
           </p>
 
+          <a href="#home" className="footer-back-to-top" aria-label="Volver arriba">
+            Volver arriba
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

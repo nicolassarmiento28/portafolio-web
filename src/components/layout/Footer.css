@@ -20,6 +20,13 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  text-decoration: none;
+  width: fit-content;
+  transition: opacity 0.3s ease;
+}
+
+.footer-brand:hover {
+  opacity: 0.8;
 }
 
 .footer-initials {
@@ -87,6 +94,22 @@
   font-size: 14px;
   color: var(--text-muted);
   margin: 0;
+}
+
+.footer-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-back-to-top:hover {
+  color: var(--accent-primary);
+  transform: translateY(-2px);
 }
 
 .heart-icon {

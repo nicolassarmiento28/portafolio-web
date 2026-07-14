@@ -20,7 +20,7 @@ const About = () => {
           </h2>
         </motion.div>
 
-        <Row gutter={[48, 48]} align="middle">
+        <Row gutter={[48, 48]} align="top">
           <Col xs={24} md={10}>
             <motion.div
               className="about-image-wrapper"

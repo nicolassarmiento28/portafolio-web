@@ -17,7 +17,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-image {
@@ -56,16 +56,16 @@
 
 .image-decoration-1 {
   background: var(--gradient-primary);
-  opacity: 0.2;
-  top: -20px;
-  left: -20px;
+  opacity: 0.35;
+  top: -10px;
+  left: -10px;
 }
 
 .image-decoration-2 {
   background: var(--gradient-secondary);
-  opacity: 0.2;
-  top: 20px;
-  left: 20px;
+  opacity: 0.35;
+  top: 10px;
+  left: 10px;
 }
 
 .about-content {
