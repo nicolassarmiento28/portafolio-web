@@ -31,7 +31,7 @@
 
 .about-image-wrapper {
   grid-area: photo;
-  justify-self: center;
+  justify-self: start;
   width: 100%;
   max-width: 400px;
 }
