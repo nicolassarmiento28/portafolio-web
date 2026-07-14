@@ -39,7 +39,7 @@ const About = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInRight}
             >
-              <h2 className="section-title">
+              <h2 className="about-title">
                 Sobre <span className="gradient-text">Mí</span>
               </h2>
 
