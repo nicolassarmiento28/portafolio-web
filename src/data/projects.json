@@ -225,7 +225,7 @@
     {
   "id": "4",
   "title": "VG Collection",
-  "description": "Aplicación web desarrollada con React para gestionar y visualizar una colección de videojuegos mediante una interfaz moderna, dinámica y responsive.",
+  "description": "Single Page Application con React y TypeScript para gestionar una colección personal de videojuegos, con integración a la API de IGDB, identidad visual retro-arcade y modo oscuro por defecto.",
 
   "thumbnail": "/projects/project4/thumb.jpg",
 
@@ -235,21 +235,23 @@
   ],
 
   "details": {
-    "challenge": "Desarrollar una plataforma organizada e intuitiva para administrar una colección de videojuegos, facilitando la visualización y acceso a la información.",
+    "challenge": "Desarrollar una plataforma organizada e intuitiva para administrar una colección de videojuegos, con búsqueda e importación de datos desde una fuente externa (IGDB) y estadísticas de la colección.",
 
-    "solution": "Implementé una Single Page Application (SPA) con React enfocada en gestión de colecciones, utilizando renderizado dinámico, manejo de estado y una interfaz optimizada para navegación rápida.",
+    "solution": "Implementé una SPA con React y TypeScript, con búsqueda global con autocompletado, paleta de comandos (Ctrl/Cmd + K), importación de juegos desde IGDB mediante un proxy serverless propio, dashboard de estadísticas con Recharts y exportación/importación de la colección en JSON.",
 
-    "impact": "Permite centralizar y gestionar colecciones de videojuegos mediante una experiencia visual clara, moderna y adaptable a distintos dispositivos."
+    "impact": "Permite centralizar y gestionar colecciones de videojuegos mediante una experiencia visual clara, moderna y adaptable a distintos dispositivos, combinando datos personales con información enriquecida de IGDB."
   },
 
   "features": [
-    "Gestión y visualización de colección de videojuegos",
-    "Renderizado dinámico de registros con React",
-    "Interfaz optimizada para navegación rápida",
-    "Manejo de estado para actualización dinámica de contenido",
-    "Diseño responsive para desktop y dispositivos móviles",
-    "Arquitectura SPA enfocada en experiencia de usuario",
-    "Interfaz moderna y organizada para administración de contenido"
+    "Home con juegos destacados y recién lanzados desde IGDB",
+    "Búsqueda global con autocompletado y paleta de comandos (Ctrl/Cmd + K)",
+    "Importación de juegos desde IGDB con datos pre-poblados o carga manual",
+    "Edición de juegos con notas, pros/contras y estado de completado",
+    "Dashboard de estadísticas por plataforma, género, año y porcentaje de completado",
+    "Exportación e importación de la colección en JSON",
+    "Selector aleatorio de juego pendiente (\"¿Qué juego hoy?\")",
+    "Modo oscuro/claro con paleta personalizada",
+    "Proxy serverless propio para las llamadas a la API de IGDB con rate limiting"
   ],
 
   "techStack": [
@@ -259,14 +261,24 @@
       "color": "#61dafb"
     },
     {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "color": "#3178c6"
+    },
+    {
       "name": "Vite",
       "icon": "vite",
       "color": "#646cff"
     },
     {
-      "name": "JavaScript",
-      "icon": "javascript",
-      "color": "#f7df1e"
+      "name": "Ant Design",
+      "icon": "antdesign",
+      "color": "#1677ff"
+    },
+    {
+      "name": "React Router",
+      "icon": "reactrouter",
+      "color": "#ca4245"
     }
   ],
 
@@ -277,9 +289,10 @@
 
   "tags": [
     "React",
+    "TypeScript",
     "SPA",
     "Frontend",
-    "Collection Management"
+    "IGDB API"
   ],
 
   "featured": true
