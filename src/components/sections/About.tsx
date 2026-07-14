@@ -1,4 +1,3 @@
-import { Row, Col } from 'antd';
 import { motion } from 'framer-motion';
 import { fadeInLeft, fadeInRight } from '../../utils/animations';
 import personalData from '../../data/personal.json';
@@ -8,16 +7,20 @@ const About = () => {
   return (
     <div id="about" className="about-section">
       <div className="about-container">
-        <Row gutter={[48, 48]} align="top">
-          <Col xs={24} md={10}>
-            <motion.div
-              className="about-image-wrapper"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInLeft}
-            >
-              <div className="about-image glass">
+        <div className="about-grid">
+          <h2 className="about-title">
+            Sobre <span className="gradient-text">Mí</span>
+          </h2>
+
+          <motion.div
+            className="about-image-wrapper"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInLeft}
+          >
+            <div className="about-image-border">
+              <div className="about-image">
                 <img
                   src="/profile.jpg"
                   alt={personalData.fullName}
@@ -26,82 +29,76 @@ const About = () => {
                   }}
                 />
               </div>
-              <div className="image-decoration image-decoration-1"></div>
-              <div className="image-decoration image-decoration-2"></div>
-            </motion.div>
-          </Col>
+            </div>
+          </motion.div>
 
-          <Col xs={24} md={14}>
-            <motion.div
-              className="about-content"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeInRight}
-            >
-              <h2 className="about-title">
-                Sobre <span className="gradient-text">Mí</span>
-              </h2>
+          <motion.div
+            className="about-text-block"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInRight}
+          >
+            <h3 className="about-subtitle gradient-text">
+              {personalData.title}
+            </h3>
 
-              <h3 className="about-subtitle gradient-text">
-                {personalData.title}
-              </h3>
+            <p className="about-text">
+              {personalData.bio}
+            </p>
+          </motion.div>
 
-              <p className="about-text">
-                {personalData.bio}
-              </p>
-
-              <div className="about-info">
-                <div className="info-item">
-                  <span className="info-label gradient-text">Nombre:</span>
-                  <span className="info-value">{personalData.fullName}</span>
-                </div>
-                <div className="info-item">
-                  <span className="info-label gradient-text">Email:</span>
-                  <span className="info-value">{personalData.email}</span>
-                </div>
-                {personalData.location && (
-                  <div className="info-item">
-                    <span className="info-label gradient-text">Ubicación:</span>
-                    <span className="info-value">{personalData.location}</span>
-                  </div>
-                )}
+          <div className="about-extra">
+            <div className="about-info">
+              <div className="info-item">
+                <span className="info-label gradient-text">Nombre:</span>
+                <span className="info-value">{personalData.fullName}</span>
               </div>
-
-              <div className="about-highlights">
-                <motion.div
-                  className="highlight-card glass"
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
-                  <h4 className="highlight-title gradient-text">Enfoque</h4>
-                  <p className="highlight-text">
-                    Desarrollar aplicaciones web modernas, escalables y de alta calidad mediante código limpio, buenas prácticas de ingeniería y tecnologías actuales.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  className="highlight-card glass"
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
-                  <h4 className="highlight-title gradient-text">Objetivo</h4>
-                  <p className="highlight-text">
-                    Crear soluciones tecnológicas que resuelvan problemas reales, aportando valor mediante desarrollo Full Stack, arquitectura de software e innovación continua.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  className="highlight-card glass"
-                  whileHover={{ scale: 1.05, y: -5 }}
-                >
-                  <h4 className="highlight-title gradient-text">Aprendizaje</h4>
-                  <p className="highlight-text">
-                    Comprometido con el aprendizaje continuo, explorando nuevas tecnologías, desarrollo Full Stack, inteligencia artificial, LLMs y herramientas modernas para mantenerme actualizado con las tendencias de la industria.
-                  </p>
-                </motion.div>
+              <div className="info-item">
+                <span className="info-label gradient-text">Email:</span>
+                <span className="info-value">{personalData.email}</span>
               </div>
-            </motion.div>
-          </Col>
-        </Row>
+              {personalData.location && (
+                <div className="info-item">
+                  <span className="info-label gradient-text">Ubicación:</span>
+                  <span className="info-value">{personalData.location}</span>
+                </div>
+              )}
+            </div>
+
+            <div className="about-highlights">
+              <motion.div
+                className="highlight-card glass"
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                <h4 className="highlight-title gradient-text">Enfoque</h4>
+                <p className="highlight-text">
+                  Desarrollar aplicaciones web modernas, escalables y de alta calidad mediante código limpio, buenas prácticas de ingeniería y tecnologías actuales.
+                </p>
+              </motion.div>
+
+              <motion.div
+                className="highlight-card glass"
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                <h4 className="highlight-title gradient-text">Objetivo</h4>
+                <p className="highlight-text">
+                  Crear soluciones tecnológicas que resuelvan problemas reales, aportando valor mediante desarrollo Full Stack, arquitectura de software e innovación continua.
+                </p>
+              </motion.div>
+
+              <motion.div
+                className="highlight-card glass"
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                <h4 className="highlight-title gradient-text">Aprendizaje</h4>
+                <p className="highlight-text">
+                  Comprometido con el aprendizaje continuo, explorando nuevas tecnologías, desarrollo Full Stack, inteligencia artificial, LLMs y herramientas modernas para mantenerme actualizado con las tendencias de la industria.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
