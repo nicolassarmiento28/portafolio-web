@@ -1,6 +1,6 @@
 .projects-section {
   padding: 100px 24px;
-  background: var(--bg-primary);
+  background: var(--section-projects);
   position: relative;
 }
 
