@@ -304,7 +304,7 @@
 },
     {
   "id": "5",
-  "title": "Buscador de Películas",
+  "title": "CineList",
   "description": "Aplicación web desarrollada con React que permite explorar el catálogo de TMDb, buscar películas en tiempo real, filtrarlas por categoría y guardar favoritos con autenticación de Google.",
 
   "thumbnail": "/projects/project3/thumb.jpg",
