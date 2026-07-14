@@ -231,7 +231,9 @@
 
   "images": [
     "/projects/project4/img1.jpg",
-    "/projects/project4/img2.jpg"
+    "/projects/project4/img2.jpg",
+    "/projects/project4/img3.jpg",
+    "/projects/project4/img4.jpg"
   ],
 
   "details": {
