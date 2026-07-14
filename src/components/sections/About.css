@@ -9,8 +9,8 @@
   margin: 0 auto;
 }
 
-.about-header {
-  margin-bottom: 60px;
+.about-content .section-title {
+  margin-bottom: 8px;
 }
 
 .about-image-wrapper {
@@ -152,11 +152,6 @@
 @media (max-width: 768px) {
   .about-section {
     padding: 60px 16px;
-  }
-
-  .about-header {
-    margin-bottom: 40px;
-    text-align: center;
   }
 
   .about-subtitle {

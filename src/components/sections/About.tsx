@@ -8,18 +8,6 @@ const About = () => {
   return (
     <div id="about" className="about-section">
       <div className="about-container">
-        <motion.div
-          className="about-header"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeInLeft}
-        >
-          <h2 className="section-title">
-            Sobre <span className="gradient-text">Mí</span>
-          </h2>
-        </motion.div>
-
         <Row gutter={[48, 48]} align="top">
           <Col xs={24} md={10}>
             <motion.div
@@ -51,6 +39,10 @@ const About = () => {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInRight}
             >
+              <h2 className="section-title">
+                Sobre <span className="gradient-text">Mí</span>
+              </h2>
+
               <h3 className="about-subtitle gradient-text">
                 {personalData.title}
               </h3>
