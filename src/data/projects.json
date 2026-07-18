@@ -1,6 +1,71 @@
 {
   "projects": [
     {
+  "id": "8",
+  "title": "NicolasOS",
+  "description": "Portafolio personal en forma de terminal interactiva estilo sistema operativo, con comandos personalizados para explorar mi perfil, proyectos y skills.",
+
+  "thumbnail": "/projects/project8/thumb.jpg",
+
+  "images": [
+    "/projects/project8/img1.jpg",
+    "/projects/project8/img2.jpg",
+    "/projects/project8/img3.jpg",
+    "/projects/project8/img4.jpg"
+  ],
+
+  "details": {
+    "challenge": "Crear un portafolio distinto a los formatos tradicionales, que reflejara identidad técnica y creatividad mediante una experiencia interactiva tipo terminal, manteniendo accesibilidad e información clara para reclutadores.",
+
+    "solution": "Desarrollé una terminal web interactiva con comandos personalizados (about, skills, projects, theme, matrix, entre otros) que exponen mi información profesional, además de una vista alternativa tipo tarjetas para quienes prefieren una navegación más tradicional.",
+
+    "impact": "Ofrece una forma memorable y original de presentar mi perfil profesional, combinando una experiencia lúdica de terminal con acceso rápido a proyectos, skills y contacto."
+  },
+
+  "features": [
+    "Terminal interactiva con comandos personalizados (about, whoami, skills, projects)",
+    "Botones de acceso rápido organizados por categoría (info, contacto, sistema, extra)",
+    "Vista alternativa tipo tarjetas ('vista normal') para navegación tradicional",
+    "Temas visuales seleccionables (cyberpunk, linux, dos, windows-xp, hacker)",
+    "Easter eggs como el efecto Matrix",
+    "Historial de comandos y accesos directos a contacto, GitHub, LinkedIn y CV",
+    "Diseño responsive con estética retro de terminal"
+  ],
+
+  "techStack": [
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "#61dafb"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "color": "#3178c6"
+    },
+    {
+      "name": "Vite",
+      "icon": "vite",
+      "color": "#646cff"
+    }
+  ],
+
+  "links": {
+    "live": "https://ns-dev-five.vercel.app/",
+    "github": "https://github.com/nicolassarmiento28/NicolasOS"
+  },
+
+  "tags": [
+    "Portfolio",
+    "React",
+    "TypeScript",
+    "Terminal",
+    "Frontend"
+  ],
+
+  "featured": true
+},
+    {
   "id": "1",
   "title": "SaasChatbot IA",
   "description": "Plataforma SaaS para Creación de Chatbots Inteligentes. Aplicación SaaS desarrollada siguiendo la metodología Spec Driven Development, diseñada para que empresas puedan crear e implementar chatbots de atención al cliente impulsados por inteligencia artificial en cuestión de minutos. La plataforma incorpora autenticación segura, gestión de usuarios, comunicación en tiempo real e integración con modelos de lenguaje para ofrecer conversaciones naturales y escalables.",
