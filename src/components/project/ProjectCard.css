@@ -23,7 +23,7 @@
 
 .project-card-image {
   position: relative;
-  height: 250px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
@@ -156,10 +156,6 @@
 }
 
 @media (max-width: 768px) {
-  .project-card-image {
-    height: 200px;
-  }
-
   .project-card-title {
     font-size: 20px;
   }
