@@ -48,8 +48,7 @@ const Footer = () => {
             © {currentYear} {personalData.fullName}. Todos los derechos reservados.
           </p>
 
-          <a href="#home" className="footer-back-to-top" aria-label="Volver arriba">
-            Volver arriba
+          <a href="#home" className="footer-back-to-top" aria-label="Volver al inicio">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 19V5M5 12l7-7 7 7" />
             </svg>
