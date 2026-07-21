@@ -1,11 +1,38 @@
 # Portafolio Web — Nicolas Sarmiento
 
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=white)
+![Ant Design](https://img.shields.io/badge/Ant%20Design-0170FE?style=flat-square&logo=antdesign&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![License](https://img.shields.io/badge/Licencia-MIT-green?style=flat-square)
+
 Portafolio web desarrollado con React y Vite para presentar proyectos frontend y fullstack mediante una interfaz moderna, responsive y enfocada en experiencia de usuario. La aplicación incluye visualización dinámica de proyectos, navegación optimizada y acceso directo a demos y repositorios de GitHub.
 
 Implementé una arquitectura SPA con componentes reutilizables, diseño responsive y renderizado dinámico para organizar y destacar aplicaciones desarrolladas con tecnologías como React, TypeScript.
 
 - **Demo en vivo:** https://portafolio-webnsj.vercel.app/
 - **Repositorio:** https://github.com/nicolassarmiento28/portafolio-web
+
+---
+
+## Capturas
+
+| Light mode | Dark mode |
+|---|---|
+| ![Hero light mode](docs/screenshots/hero-light.png) | ![Hero dark mode](docs/screenshots/hero-dark.png) |
+
+**Habilidades técnicas**
+
+![Sección de habilidades técnicas](docs/screenshots/skills.png)
+
+**Proyectos destacados**
+
+![Sección de proyectos destacados](docs/screenshots/projects.png)
+
+**Vista mobile**
+
+<img src="docs/screenshots/hero-mobile.png" alt="Hero en mobile" width="320" />
 
 ---
 
