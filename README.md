@@ -5,7 +5,6 @@
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat-square&logo=vite&logoColor=white)
 ![Ant Design](https://img.shields.io/badge/Ant%20Design-0170FE?style=flat-square&logo=antdesign&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![License](https://img.shields.io/badge/Licencia-MIT-green?style=flat-square)
 
 Portafolio web desarrollado con React y Vite para presentar proyectos frontend y fullstack mediante una interfaz moderna, responsive y enfocada en experiencia de usuario. La aplicación incluye visualización dinámica de proyectos, navegación optimizada y acceso directo a demos y repositorios de GitHub.
 
@@ -47,7 +46,6 @@ Implementé una arquitectura SPA con componentes reutilizables, diseño responsi
 7. [Estructura del proyecto](#estructura-del-proyecto)
 8. [Personalización de contenido](#personalización-de-contenido)
 9. [Despliegue](#despliegue)
-10. [Licencia](#licencia)
 
 ---
 
@@ -192,10 +190,6 @@ portfolio/
 3. Agrega las variables de entorno en el panel de Netlify.
 
 ---
-
-## Licencia
-
-MIT
 
 ## Autor
 
